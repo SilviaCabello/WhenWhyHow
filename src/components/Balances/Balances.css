@@ -27,25 +27,19 @@
 
 /* ------- Main Bank ------- */
 
-.dropdown-MainBank {
-  background-color: #dddddd !important;
-  border-color: transparent !important;
+.toggle-MainBank {
   color: black !important;
   font-weight: bold !important;
-  text-align: left !important;
-  border-radius: 0 !important;
-  width: 100% !important;
 }
 
-.dropdown-SecondBank {
-  background-color: #efeeee !important;
-  border-color: transparent !important;
-  color: rgb(147, 147, 147) !important;
-  text-align: left !important;
-  border-radius: 0 !important;
-  width: 100% !important;
+.toggle-SecondBank {
+  color: rgb(108, 108, 108) !important;
 }
 
-.Records {
-  width: 100% !important;
+.card-header-mainbank {
+  background-color: #dddddd !important;
+}
+
+.MainBank-Records {
+  list-style-type: none;
 }
