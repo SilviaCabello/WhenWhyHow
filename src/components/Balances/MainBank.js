@@ -10,7 +10,10 @@ import {
 function MainBank() {
   return (
     <div>
-      <p>Main Bank Component</p>
+      <Dropdown>
+        <DropdownToggle>Main Bank</DropdownToggle>
+        <DropdownMenu>Records</DropdownMenu>
+      </Dropdown>
     </div>
   );
 }
