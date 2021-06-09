@@ -30,10 +30,12 @@
 .toggle-MainBank {
   color: black !important;
   font-weight: bold !important;
+  text-decoration: none !important;
 }
 
 .toggle-SecondBank {
   color: rgb(108, 108, 108) !important;
+  text-decoration: none !important;
 }
 
 .card-header-mainbank {

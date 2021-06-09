@@ -21,9 +21,17 @@ export default function MainBank() {
           <Accordion.Collapse eventKey="0">
             <Card.Body>
               <ul className="MainBank-Records">
-                <li>Record example number 1</li>
-                <li>Record example number 2</li>
-                <li>Record example number 3</li>
+                <li>
+                  Pie Me Restaurant Bonn &nbsp; &nbsp; 32,98€ <br></br>09.05.21
+                </li>
+                <br></br>
+                <li>
+                  Rewe Supermarkt Bonn &nbsp; &nbsp; 47,99€ <br></br>09.05.21
+                </li>
+                <br></br>
+                <li>
+                  Ernst Kaffeeröster Köln &nbsp; &nbsp; 18,96€ <br></br>09.05.21
+                </li>
               </ul>
             </Card.Body>
           </Accordion.Collapse>
@@ -34,12 +42,12 @@ export default function MainBank() {
               className="toggle-SecondBank"
               as={Button}
               variant="link"
-              eventKey="0"
+              eventKey="1"
             >
               Second Bank ▼
             </Accordion.Toggle>
           </Card.Header>
-          <Accordion.Collapse eventKey="0">
+          <Accordion.Collapse eventKey="1">
             <Card.Body>Records</Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -49,12 +57,12 @@ export default function MainBank() {
               className="toggle-SecondBank"
               as={Button}
               variant="link"
-              eventKey="0"
+              eventKey="2"
             >
               Third Bank ▼
             </Accordion.Toggle>
           </Card.Header>
-          <Accordion.Collapse eventKey="0">
+          <Accordion.Collapse eventKey="2">
             <Card.Body>Records</Card.Body>
           </Accordion.Collapse>
         </Card>
