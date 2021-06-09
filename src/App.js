@@ -6,7 +6,11 @@ import Home from "./components/Home/Home";
 import LogIn from "./components/LogIn/LogIn";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Balances from "./components/Balances/Balances";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 
+library.add(fab, faCheckSquare);
 function App() {
   return (
     <div className="App">
