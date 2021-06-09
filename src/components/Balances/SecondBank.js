@@ -3,7 +3,7 @@ import "./Balances.css";
 function SecondBank() {
   return (
     <div>
-      <p>Second Bank</p>
+      <p>Second Bank Component</p>
     </div>
   );
 }
