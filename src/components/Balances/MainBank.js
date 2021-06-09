@@ -16,11 +16,18 @@ function MainBank() {
 
   return (
     <div>
-      <Dropdown isOpen={dropdown} toggle={openCloseDropdown}>
-        <DropdownToggle>Main Bank</DropdownToggle>
+      <Dropdown isOpen={dropdown} toggle={openCloseDropdown} size="lg">
+        <DropdownToggle className="dropdown-MainBank" caret>
+          Main Bank
+        </DropdownToggle>
 
-        <DropdownMenu>
-          <DropdownItem>Records</DropdownItem>
+        <DropdownMenu className="Records">
+          <DropdownItem header>These are your last Records:</DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem>Record Example Number 1</DropdownItem>
+          <DropdownItem>Record Example Number 2</DropdownItem>
+          <DropdownItem>Record Example Number 3</DropdownItem>
+          <DropdownItem>Record Example Number 4</DropdownItem>
         </DropdownMenu>
       </Dropdown>
     </div>
