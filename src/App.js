@@ -6,6 +6,7 @@ import Home from "./components/Home/Home";
 import LogIn from "./components/LogIn/LogIn";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Balances from "./components/Balances/Balances";
+import Spending from "./components/Spending/Spending";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/balances">
           <Balances />
+        </Route>
+        <Route path="/spending">
+          <Spending />
         </Route>
         <Route exact path="/">
           <Home />
