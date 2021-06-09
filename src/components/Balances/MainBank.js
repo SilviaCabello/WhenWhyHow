@@ -12,7 +12,9 @@ function MainBank() {
     <div>
       <Dropdown>
         <DropdownToggle>Main Bank</DropdownToggle>
-        <DropdownMenu>Records</DropdownMenu>
+        <DropdownMenu>
+          <DropdownItem>Records</DropdownItem>
+        </DropdownMenu>
       </Dropdown>
     </div>
   );
