@@ -21,7 +21,7 @@ function MainBank() {
           Main Bank
         </DropdownToggle>
 
-        <DropdownMenu className="Records">
+        <DropdownMenu className="Records" right>
           <DropdownItem header>These are your last Records:</DropdownItem>
           <DropdownItem divider />
           <DropdownItem>Record Example Number 1</DropdownItem>

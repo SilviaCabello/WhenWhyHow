@@ -1,36 +1,25 @@
 import React, { useState } from "react";
 import "./Balances.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  Dropdown,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-} from "reactstrap";
+import { Accordion, Card, Button } from "react-bootstrap";
 
-function SecondBank() {
-    const [dropdown, setDropdown] = useState(false);
-    const openCloseDropdown = () => {
-      setDropdown(!dropdown);
-    };
-  
-    return (
+export default function SecondBank() {
+  return (
       <div>
-        <Dropdown isOpen={dropdown} toggle={openCloseDropdown} size="lg">
-          <DropdownToggle className="dropdown-SecondBank" caret>Second Bank</DropdownToggle>
-  
-          <DropdownMenu className="Records">
-            <DropdownItem header>These are your last Records:</DropdownItem>
-            <DropdownItem divider/>
-            <DropdownItem>Record Example Number 1</DropdownItem>
-            <DropdownItem>Record Example Number 2</DropdownItem>
-            <DropdownItem>Record Example Number 3</DropdownItem>
-            <DropdownItem>Record Example Number 4</DropdownItem>
-          </DropdownMenu>
-        </Dropdown>
+          <Accordion>
+  <Card>
+    <Card.Header>
+      <Accordion.Toggle as={Button} variant="link" eventKey="0" >
+        Second Bank
+      </Accordion.Toggle>
+    </Card.Header>
+    <Accordion.Collapse eventKey="0">
+      <Card.Body>Records</Card.Body>
+    </Accordion.Collapse>
+  </Card>
+</Accordion>
       </div>
-    );
-  }
-  
+  )
+}
 
-export default SecondBank;
+
