@@ -16,7 +16,7 @@ function MainBank() {
 
   return (
     <div>
-      <Dropdown>
+      <Dropdown isOpen={dropdown} toggle={openCloseDropdown}>
         <DropdownToggle>Main Bank</DropdownToggle>
 
         <DropdownMenu>
