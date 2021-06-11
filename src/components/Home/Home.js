@@ -5,7 +5,7 @@ function Home() {
     <div className="container">
       <img
         className="picture"
-        src="https://res.cloudinary.com/dnefeccae/image/upload/v1623246641/pexels-andrea-piacquadio-3781524_y1sly8.jpg"
+        src="https://res.cloudinary.com/dnefeccae/image/upload/v1623401665/pexels-andrea-piacquadio-3781660_e8ffrj.jpg"
         alt=""
       />
       <div className="intro-text">

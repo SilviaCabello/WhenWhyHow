@@ -1,9 +1,9 @@
 .picture {
   width: 100%;
 }
-.p {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+.intro-text {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .explore-profile {
   display: flex;
@@ -19,6 +19,8 @@
   background: #f1df68;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 3rem;
 }
 .intro-box {
   width: 146px;
@@ -30,14 +32,16 @@
 .intro-boxcontainer {
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 @media screen and (max-width: 812px) {
   .picture {
     width: 100%;
   }
-  .p {
+  .intro-text {
     margin-top: 3rem;
     margin-bottom: 3rem;
+    text-align: center;
   }
   .explore-profile {
     display: flex;
@@ -52,7 +56,10 @@
     top: 337px;
     background: #f1df68;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
     border-radius: 30px;
+    margin-bottom: 3rem;
+    padding: 10px;
   }
   .intro-box {
     width: 146px;
@@ -65,5 +72,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 3rem;
   }
 }
