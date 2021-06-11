@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Balances.css";
 import MainBank from "./MainBank";
-import SecondBank from "./SecondBank";
 
 function Balances() {
   return (
@@ -10,7 +9,7 @@ function Balances() {
         Available Cash <b>5388,23€</b>
       </p>
       <MainBank />
-      <SecondBank />
+
       <div className="balances-categories">
         <Link to={`/dashboard`}>
           <img
