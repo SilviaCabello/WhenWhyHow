@@ -7,8 +7,10 @@ import LogIn from "./components/LogIn/LogIn";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Balances from "./components/Balances/Balances";
 import Spending from "./components/Spending/Spending";
+import { useState } from "react";
 
 function App() {
+  const [open, setOpen] = useState(false);
   return (
     <div className="App">
       <NavBar />
@@ -23,7 +25,7 @@ function App() {
           <Balances />
         </Route>
         <Route path="/spending">
-          <Spending />
+          <Spending open={open} setOpen={setOpen} />
         </Route>
         <Route exact path="/">
           <Home />
