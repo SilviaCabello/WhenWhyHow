@@ -1,5 +1,11 @@
-.container {
+.picture {
+  width: 100%;
+}
+.explore-profile {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+.profile-btn {
+  display: flex;
+  justify-content: center;
 }
