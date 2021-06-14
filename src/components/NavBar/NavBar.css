@@ -3,7 +3,7 @@
 @media screen and (min-width: 350px) {
   .logo {
     display: flex;
-    width: 100px;
+    width: 90px;
     height: 100%;
     float: left;
   }
@@ -73,7 +73,7 @@
   }
 
   .menu-icon {
-    display: white;
+    display: none;
   }
 
   .nav-links-mobile {
@@ -97,19 +97,18 @@
 @media screen and (max-width: 600px) {
   .logo-container {
     display: flex;
-    margin-top: 150px;
+    margin-top: 0px;
     position: absolute;
   }
 
   .logo {
-    max-width: 90%;
+    max-width: 70%;
+    padding-top: 15px;
   }
 
   .navbar-items {
     background: black;
-    position: absolute;
-    height: 0rem;
-    letter-spacing: 3px;
+    height: 13vh;
     text-decoration: none;
   }
 
@@ -124,14 +123,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 50vh;
     position: absolute;
-    top: 100px;
+    top: 70px;
     left: -200%;
-    opacity: 0.2;
     transition: all 0.5s ease;
     padding: 0px;
-    margin: 0px;
+    margin-bottom: 0px;
   }
 
   .nav-menu.active {
@@ -139,37 +136,40 @@
     left: 0;
     opacity: 1;
     transition: all 0.9s ease-out;
-    z-index: 1.5;
-    margin-top: 50px;
+    z-index: 2.0;
+    margin-top: 25px;
   }
 
   .NavBar-li {
+    position: relative;
     background: black;
     font-size: 1rem;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     color: #eede5b;
     font-weight: 500;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 0px;
     margin: 0;
   }
 
   .nav-links {
+    display: block;
     text-align: center;
     width: 100%;
-    display: table;
-    margin: 40px;
+    margin: 0px;
+    padding-bottom: 30px;
+    padding-top: 50px;
   }
 
   .menu-icon {
     text-decoration: none;
-    background: white;
+    background:none ;
     color: #eede5b;
-    display: block;
+    display: flex;
     position: absolute;
-    margin-top: 40px;
-    right: 2rem;
+    top: 0rem;
+    right: 1rem;
     transform: translate(-50%, 60%);
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
