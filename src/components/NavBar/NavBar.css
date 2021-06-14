@@ -163,11 +163,11 @@
 
   .menu-icon {
     text-decoration: none;
-    background: black;
+    background: white;
     color: #eede5b;
     display: block;
     position: absolute;
-    margin-top: 60px;
+    margin-top: 40px;
     right: 2rem;
     transform: translate(-50%, 60%);
     font-size: 4rem;
