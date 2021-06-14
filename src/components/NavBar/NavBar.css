@@ -97,7 +97,7 @@
 @media screen and (max-width: 600px) {
   .logo-container {
     display: flex;
-    margin-top: 150px;
+    margin-top: 0px;
     position: absolute;
   }
 
@@ -108,8 +108,7 @@
   .navbar-items {
     background: black;
     position: absolute;
-    height: 0rem;
-    letter-spacing: 3px;
+    height: 15vh;
     text-decoration: none;
   }
 
@@ -163,12 +162,12 @@
 
   .menu-icon {
     text-decoration: none;
-    background: white;
+    background:none;
     color: #eede5b;
-    display: block;
+    display: flex;
     position: absolute;
-    margin-top: 40px;
-    right: 2rem;
+    top: 0.5rem;
+    right: 1rem;
     transform: translate(-50%, 60%);
     font-size: 4rem;
   }
