@@ -46,3 +46,14 @@
 .MainBank-Records {
   list-style-type: none;
 }
+
+
+
+@media screen and (max-width: 600px) {
+  .balances-totalcash {
+    text-align: center;
+    background-color: #eedf5b;
+    height: 25vh;
+  }
+
+}
