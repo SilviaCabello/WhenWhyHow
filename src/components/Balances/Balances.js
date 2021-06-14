@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Balances.css";
 import MainBank from "./MainBank";
+import spendings from './spendings.png';
 
 function Balances() {
   return (
@@ -14,12 +15,18 @@ function Balances() {
         <Link to={`/dashboard`}>
           <img
             className="spendings-category"
-            src="https://i.imgur.com/9Z8HrXN.png"
+            src={spendings}
             alt="Spendings"
           />
         </Link>
-        <img src="https://i.imgur.com/8CspobY.png" alt="Banking Habits" />
-        <img src="https://i.imgur.com/uE4yByP.png" alt="Digital chanels" />
+        <img
+          src="https://res.cloudinary.com/dwjfpjuhh/image/upload/v1623401115/wwh/bankinghabits_lgzbr3.png"
+          alt="Banking Habits"
+        />
+        <img
+          src="https://res.cloudinary.com/dwjfpjuhh/image/upload/v1623401115/wwh/digitalchanels_yju1qs.png"
+          alt="Digital chanels"
+        />
       </div>
     </div>
   );
