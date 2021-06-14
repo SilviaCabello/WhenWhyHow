@@ -46,3 +46,7 @@
 .MainBank-Records {
   list-style-type: none;
 }
+
+.card{
+  position: static !important; 
+}
