@@ -19,6 +19,7 @@
 .balances-categories img {
   width: 100px;
   height: 100px;
+  margin:30px 5px 0 5px;
 }
 
 .spendings-category {
@@ -44,4 +45,8 @@
 
 .MainBank-Records {
   list-style-type: none;
+}
+
+.card{
+  position: static !important; 
 }

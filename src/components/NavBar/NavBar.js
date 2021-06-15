@@ -16,7 +16,7 @@ const NavBar = () => {
     
         {
             title: "Overview",
-            url: "/Overview",
+            url: "/balances",
             cName: "nav-links",
         },
     
@@ -44,7 +44,7 @@ const NavBar = () => {
 					<ul className={menuList ? "nav-menu active" : "nav-menu"}>
 						{MenuLinks.map((item, index) => {
 							return (
-								<li key={index}>
+								<li className="NavBar-li" key={index}>
 									<Link
 										to={item.url}
 										className={item.cName}
