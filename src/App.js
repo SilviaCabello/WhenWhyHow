@@ -7,8 +7,13 @@ import LogIn from "./components/LogIn/LogIn";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Balances from "./components/Balances/Balances";
 import Spending from "./components/Spending/Spending";
+import PieChart from "./components/Spending/PieChart";
 import { useState } from "react";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 
+library.add(fab, faCheckSquare);
 function App() {
   const [open, setOpen] = useState(false);
   return (
@@ -25,7 +30,7 @@ function App() {
           <Balances />
         </Route>
         <Route path="/spending">
-          <Spending open={open} setOpen={setOpen} />
+          <PieChart />
         </Route>
         <Route exact path="/">
           <Home />
