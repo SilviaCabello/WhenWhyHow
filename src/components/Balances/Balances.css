@@ -3,6 +3,7 @@
   background-color: #eedf5b;
   height: 50px;
   padding-top: 13px;
+  margin: auto;
 }
 
 .balances-categories {
@@ -19,7 +20,7 @@
 .balances-categories img {
   width: 100px;
   height: 100px;
-  margin:30px 5px 0 5px;
+  margin:30px 5px 30px 5px;
 }
 
 .spendings-category {
