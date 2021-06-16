@@ -1,3 +1,9 @@
+.balances-illustration {
+  width: 90%;
+  display: block;
+  margin: 10px auto 10px auto;
+}
+
 .balances-totalcash {
   text-align: center;
   background-color: #eedf5b;
@@ -20,11 +26,11 @@
 .balances-categories img {
   width: 100px;
   height: 100px;
-  margin:30px 5px 30px 5px;
+  margin: 30px 5px 30px 5px;
 }
 
 .spendings-category {
-  box-shadow: 2px 2px 15px 1px #cbcbcb;
+  box-shadow: 2px 2px 15px 1px #cbcbcb !important;
 }
 
 /* ------- Main Bank ------- */
@@ -48,6 +54,6 @@
   list-style-type: none;
 }
 
-.card{
-  position: static !important; 
+.card {
+  position: static !important;
 }

@@ -6,6 +6,7 @@ import spendings from './spendings.png';
 function Balances() {
   return (
     <div>
+      <img className="balances-illustration" src="https://i.imgur.com/D0kRo6u.jpg" alt=""/>
       <p className="balances-totalcash">
         Available Cash <b>5388,23€</b>
       </p>
