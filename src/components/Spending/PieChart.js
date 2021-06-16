@@ -1,129 +1,55 @@
-import React, { PureComponent } from "react";
-import { PieChart, Pie, Sector, ResponsiveContainer } from "recharts";
+import DonutChart from "react-donut-chart";
+import "./DonutChart.css";
+//things I would never do:
 
-const data = [
-  { name: "Trips", value: 410.23 },
-  { name: "Metro, Gas, Travels", value: 52.0 },
-  { name: "Groceries", value: 325.32 },
-  { name: "Rent", value: 940.32 },
-  { name: "Gym", value: 52.0 },
-  { name: "Others", value: 756.32 },
-];
-
-const colors = [
-  "#0088FE",
-  "#00C49F",
-  "#FFBB28",
-  "#FF8042",
-  "#0088FE",
-  "#FF8042",
-];
-
-const renderActiveShape = (props) => {
-  const RADIAN = Math.PI / 180;
-  const {
-    cx,
-    cy,
-    midAngle,
-    innerRadius,
-    outerRadius,
-    startAngle,
-    endAngle,
-    fill,
-    payload,
-    percent,
-    value,
-  } = props;
-  const sin = Math.sin(-RADIAN * midAngle);
-  const cos = Math.cos(-RADIAN * midAngle);
-  const sx = cx + (outerRadius + 10) * cos;
-  const sy = cy + (outerRadius + 10) * sin;
-  const mx = cx + (outerRadius + 30) * cos;
-  const my = cy + (outerRadius + 30) * sin;
-  const ex = mx + (cos >= 0 ? 1 : -1) * 22;
-  const ey = my;
-  const textAnchor = cos >= 0 ? "start" : "end";
-
+function PieChart() {
   return (
-    <g>
-      <text x={cx} y={cy} dy={8} textAnchor="middle" fill={fill}>
-        {payload.name}
-      </text>
-      <Sector
-        cx={cx}
-        cy={cy}
-        innerRadius={innerRadius}
-        outerRadius={outerRadius}
-        startAngle={startAngle}
-        endAngle={endAngle}
-        fill={fill}
-      />
-      <Sector
-        cx={cx}
-        cy={cy}
-        startAngle={startAngle}
-        endAngle={endAngle}
-        innerRadius={outerRadius + 6}
-        outerRadius={outerRadius + 10}
-        fill={fill}
-      />
-      <path
-        d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`}
-        stroke={fill}
-        fill="none"
-      />
-      <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" />
-      <text
-        x={ex + (cos >= 0 ? 1 : -1) * 12}
-        y={ey}
-        textAnchor={textAnchor}
-        fill="#333"
-      >{`${value}€`}</text>
-      <text
-        x={ex + (cos >= 0 ? 1 : -1) * 12}
-        y={ey}
-        dy={18}
-        textAnchor={textAnchor}
-        fill="#999"
-      >
-        {`(${(percent * 100).toFixed(2)}%)`}
-      </text>
-    </g>
+    <div>
+      <h5 className="spending-title">Spending Categories</h5>
+      <div className="donut-container">
+        <DonutChart
+          data={[
+            {
+              label: "Travels",
+              value: 353.32,
+            },
+            {
+              label: "Groceries",
+              value: 412.45,
+            },
+
+            {
+              label: "Insurance",
+              value: 202.32,
+            },
+            {
+              label: "Home",
+              value: 202.32,
+            },
+            {
+              label: "Rent",
+              value: 800.55,
+            },
+            {
+              label: "Kids",
+              value: 602.34,
+            },
+          ]}
+          height={380}
+          width={600}
+          innerRadius={0.5}
+          colors={[
+            "#e9dc79",
+            "#eede5b",
+            "#ecd734",
+            "#bba714",
+            "#9c8b04",
+            "#948b44",
+          ]}
+        />
+      </div>
+    </div>
   );
-};
-
-export default class Example extends PureComponent {
-  static demoUrl =
-    "https://codesandbox.io/s/pie-chart-with-customized-active-shape-y93si";
-
-  state = {
-    activeIndex: 0,
-  };
-
-  onPieEnter = (_, index) => {
-    this.setState({
-      activeIndex: index,
-    });
-  };
-
-  render() {
-    return (
-      <ResponsiveContainer width="100%" height="100%">
-        <PieChart width={400} height={400}>
-          <Pie
-            activeIndex={this.state.activeIndex}
-            activeShape={renderActiveShape}
-            data={data}
-            cx="50%"
-            cy="50%"
-            innerRadius={60}
-            outerRadius={80}
-            fill={colors}
-            dataKey="value"
-            onMouseEnter={this.onPieEnter}
-          />
-        </PieChart>
-      </ResponsiveContainer>
-    );
-  }
 }
+
+export default PieChart;

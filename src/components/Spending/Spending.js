@@ -1,9 +1,15 @@
 import "./Spending.css";
 import PieChart from "./PieChart";
+import DonutChart from "react-donut-chart";
+import SelectBank from "./SelectBank";
 
 function Spending() {
   return (
-    <div width="100%" height="100vh">
+    <div>
+      <p className="balances-totalcash">
+        Available Cash <b>5388,23€</b>
+      </p>
+      <SelectBank />
       <PieChart />
     </div>
   );

@@ -15,7 +15,6 @@ import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 
 library.add(fab, faCheckSquare);
 function App() {
-  const [open, setOpen] = useState(false);
   return (
     <div className="App">
       <NavBar />
@@ -30,7 +29,7 @@ function App() {
           <Balances />
         </Route>
         <Route path="/spending">
-          <PieChart />
+          <Spending />
         </Route>
         <Route exact path="/">
           <Home />
