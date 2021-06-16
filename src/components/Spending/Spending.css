@@ -1,0 +1,52 @@
+.balances-totalcash {
+  text-align: center;
+  background-color: #eedf5b;
+  height: 50px;
+  padding-top: 13px;
+}
+
+.balances-categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* display: block;
+  margin: 0 auto; */
+}
+
+.balances-categories img {
+  width: 100px;
+  height: 100px;
+  margin: 30px 5px 0 5px;
+}
+
+.spendings-category {
+  box-shadow: 2px 2px 15px 1px #cbcbcb;
+}
+
+/* ------- Main Bank ------- */
+
+.toggle-MainBank {
+  color: black !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+
+.toggle-SecondBank {
+  color: rgb(108, 108, 108) !important;
+  text-decoration: none !important;
+}
+
+.card-header-mainbank {
+  background-color: #dddddd !important;
+}
+
+.MainBank-Records {
+  list-style-type: none;
+}
+
+.card {
+  position: static !important;
+}

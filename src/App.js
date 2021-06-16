@@ -6,6 +6,9 @@ import Home from "./components/Home/Home";
 import LogIn from "./components/LogIn/LogIn";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Balances from "./components/Balances/Balances";
+import Spending from "./components/Spending/Spending";
+import PieChart from "./components/Spending/PieChart";
+import { useState } from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
@@ -24,6 +27,9 @@ function App() {
         </Route>
         <Route path="/balances">
           <Balances />
+        </Route>
+        <Route path="/spending">
+          <Spending />
         </Route>
         <Route exact path="/">
           <Home />
