@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
@@ -15,12 +16,40 @@ import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 
 library.add(fab, faCheckSquare);
 function App() {
+  const adminUser = {
+    user: "juan",
+    password: "1234",
+  };
+  const [user, setUser] = useState({ user: "", password: "" });
+  const [error, setError] = useState("");
+
+  const login = (details) => {
+    console.log(details);
+    if (
+      details.user === adminUser.user &&
+      details.password === adminUser.password
+    ) {
+      console.log("logged in");
+      setUser({
+        user: details.user,
+        password: details.password,
+      });
+      setError("");
+    } else {
+      setUser({ user: "", password: "" });
+      setError("details do not match");
+    }
+  };
+
+  const Logout = () => {
+    setUser({});
+  };
   return (
     <div className="App">
       <NavBar />
       <Switch>
         <Route path="/login">
-          <LogIn />
+          <LogIn login={login} error={error} />
         </Route>
         <Route path="/dashboard">
           <Dashboard />
