@@ -14,25 +14,26 @@ import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 library.add(fab, faCheckSquare);
 function App() {
   const adminUser = {
-    user: "helen",
-    password: "admin123",
+    user: "juan",
+    password: "1234",
   };
-  const [user, setUser] = useState({ name: "", user: "" });
+  const [user, setUser] = useState({ user: "", password: "" });
   const [error, setError] = useState("");
 
-  const Login = (details) => {
+  const login = (details) => {
     console.log(details);
     if (
-      details.user == adminUser.user &&
-      details.password == adminUser.password
+      details.user === adminUser.user &&
+      details.password === adminUser.password
     ) {
       console.log("logged in");
       setUser({
         user: details.user,
         password: details.password,
       });
+      setError("");
     } else {
-      console.log("details do not match");
+      setUser({ user: "", password: "" });
       setError("details do not match");
     }
   };
@@ -45,7 +46,7 @@ function App() {
       <NavBar />
       <Switch>
         <Route path="/login">
-          <LogIn Login={Login} error={error} />
+          <LogIn login={login} error={error} />
         </Route>
         <Route path="/dashboard">
           <Dashboard />

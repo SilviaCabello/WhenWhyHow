@@ -1,13 +1,15 @@
 import "./LogIn.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-function LogIn({ Login, error }) {
+function LogIn({ login, error }) {
   const [details, setDetails] = useState({ user: "", password: "" });
 
   const submitHandler = (e) => {
     e.preventDefault();
-    Login(details);
+    login(details);
   };
+
   return (
     <form onSubmit={submitHandler}>
       <div className="login-container">
@@ -20,6 +22,7 @@ function LogIn({ Login, error }) {
         <div className="label-user">
           <label htmlFor="user">User:</label>
           <input
+            className="inputuser"
             type="text"
             username="user"
             id="user"
@@ -28,8 +31,9 @@ function LogIn({ Login, error }) {
           />
         </div>
         <div className="label-password">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Password:</label>
           <input
+            className="inputuser"
             type="password"
             password="password"
             id="password"
@@ -43,8 +47,16 @@ function LogIn({ Login, error }) {
           <p>Forgot your password?</p>
         </div>
 
-        <div className="signin-btn">
-          <input type="submit" value="LOGIN" />
+        <div className="signin">
+          
+            <input
+              type="submit"
+              value="LogIn"
+              className="btn"
+              onChange={LogIn}
+            />
+          
+
           {error != "" ? <div className="error">{error}</div> : ""}
         </div>
       </div>
