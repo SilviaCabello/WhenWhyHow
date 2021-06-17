@@ -15,7 +15,6 @@
 .balances-categories {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -32,8 +31,6 @@
 .spendings-category {
   box-shadow: 2px 2px 15px 1px #cbcbcb !important;
 }
-
-/* ------- Main Bank ------- */
 
 .toggle-MainBank {
   color: black !important;
@@ -54,6 +51,24 @@
   list-style-type: none;
 }
 
-.card {
+.card-balances {
   position: static !important;
+}
+
+/*---------- Desktop Version ----------*/
+
+@media (min-width: 1024px) {
+  .balances-illustration {
+    width: 35%;
+  }
+
+  .card-balances {
+    width: 50%;
+    margin: auto;
+  }
+
+  .Acordion-Balances {
+    margin-top: 20px;
+    text-align: center !important;
+  }
 }
