@@ -1,0 +1,43 @@
+.donut-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 50px 20px;
+}
+
+.donutchart-legend-item {
+  font-size: 18px;
+  font-family: Verdana;
+}
+
+.donutchart-innertext-label {
+  font-size: 30px;
+  font-family: Verdana;
+  font-weight: bold;
+}
+
+.donutchart-innertext-value {
+  font-size: 30px;
+  font-family: Verdana;
+  font-weight: bold;
+}
+.spending-title {
+  text-align: center;
+  margin: 40px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .donut-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px 20px;
+  }
+
+  .spending-title {
+    text-align: center;
+    margin: 40px 0 0 0;
+  }
+}
