@@ -3,11 +3,13 @@ import "./Home.css";
 function Home() {
   return (
     <div className="container">
+      <div className="background-homepage"></div>
       <img
         className="picture"
         src="https://res.cloudinary.com/dnefeccae/image/upload/v1623401665/pexels-andrea-piacquadio-3781660_e8ffrj.jpg"
         alt=""
       />
+
       <div className="intro-text">
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
