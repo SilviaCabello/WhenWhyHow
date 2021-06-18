@@ -55,6 +55,10 @@
   position: static !important;
 }
 
+.card-header {
+  height: 80px;
+}
+
 /*---------- Desktop Version ----------*/
 
 @media (min-width: 1024px) {

@@ -51,7 +51,7 @@ export default function MainBank() {
             <Card.Body>Records</Card.Body>
           </Accordion.Collapse>
         </Card>
-        <Card className="card-balances">
+        <Card className="card-balances1">
           <Card.Header className="card-header-secondbank">
             <Accordion.Toggle
               className="toggle-SecondBank"
