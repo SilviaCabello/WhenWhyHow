@@ -52,7 +52,7 @@ function LogIn({ login, error }) {
             <input
               type="submit"
               value="LogIn"
-              className="button"
+              className="button2"
               onChange={LogIn}
             />
           

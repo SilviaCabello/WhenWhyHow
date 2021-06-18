@@ -1,4 +1,5 @@
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -22,7 +23,9 @@ function Home() {
         </p>
       </div>
       <div className="explore-profile">
-        <button className="profile-btn">Explore your Profile</button>
+        <Link to="/login">
+          <button className="profile-btn">Login your Profile</button>
+        </Link>
       </div>
       <div className="intro-boxcontainer">
         <img
