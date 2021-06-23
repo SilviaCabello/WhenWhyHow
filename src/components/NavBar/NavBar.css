@@ -6,13 +6,10 @@
     width: 4rem;
     height: 100%;
     float: left;
-    margin-top: px;
   }
 
   .navbar-items {
     background: black;
-    display: inline-flex;
-    align-items: center;
     height: 9vh;
     width: 100%;
   }
@@ -21,12 +18,10 @@
     background: transparent;
     display: flex;
     list-style: none;
-    margin-bottom: 1rem,
   }
 
   .menu-list {
     display: flex;
-    height: 120px;
   }
 
   a {
@@ -50,8 +45,8 @@
     font-weight: 600; 
     text-transform: uppercase;
     text-decoration: none;
-    padding-top: 30px;  
-    padding: 40px; 
+    padding-top: 20px;  
+    padding: 20px; 
   }
 
   .nav-links:hover {
