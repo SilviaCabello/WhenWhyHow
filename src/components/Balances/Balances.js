@@ -3,9 +3,9 @@ import "./Balances.css";
 import MainBank from "./MainBank";
 import spendings from "./spendings.png";
 
-function Balances() {
+function Balances( user ) {
   return (
-    <div>
+    <div className="balances">
       <img
         className="balances-illustration"
         src="https://i.imgur.com/D0kRo6u.jpg"
