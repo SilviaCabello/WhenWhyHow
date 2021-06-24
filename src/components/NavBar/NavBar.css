@@ -10,7 +10,7 @@
 
   .navbar-items {
     background: black;
-    height: 9vh;
+    height: 12vh;
     width: 100%;
   }
 
@@ -93,7 +93,7 @@
 
   .logo {
     display: flex;
-    width: 4rem;
+    width: 3rem;
     height: 100%;
     float: left;
     margin-top: 0px;
@@ -144,16 +144,6 @@
     padding: 40px; 
   }
 
-  .nav-links:hover {
-    background-color: #eede5b;
-  }
-
-  .nav-links:hover,
-  .active {
-    color: black !important;
-  }
-
-
   .menu-list {
     background: none;
     text-decoration: none;
@@ -171,13 +161,7 @@
     display: flex;
     float: left;
     margin-left: 20px;
-    margin-top: 30px;
-  }
-
-  .logo:hover {
-    transform: translateY(-7px);
-    font-size: 5rem;
-    border-radius: 3px;
+    margin-top: 20px;
   }
 
 }
@@ -194,8 +178,8 @@
   }
 
   .logo {
-    max-width: 80%;
-    padding-top: 17px;
+    width: 3rem;
+    padding-top: 25px;
   }
 
   .navbar-items {
