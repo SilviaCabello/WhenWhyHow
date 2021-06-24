@@ -56,7 +56,7 @@ function App() {
           <Dashboard />
         </Route>
         <Route path="/balances">
-          <Balances />
+          <Balances adminUser={adminUser}/>
         </Route>
         <Route path="/spending">
           <Spending />

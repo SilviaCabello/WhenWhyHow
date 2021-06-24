@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 import "./Balances.css";
 import MainBank from "./MainBank";
 import spendings from "./spendings.png";
-import { useState } from "react";
+import { useState, adminUser } from "react";
 
-function Balances(adminUser, details) {
+function Balances({ adminUser }) {
   return (
     <div className="Welcome">
       <h14>
-        Welcome, <span>{details.user}</span>
+        Welcome, <span>{adminUser.user}</span>
       </h14>
 
       <img
