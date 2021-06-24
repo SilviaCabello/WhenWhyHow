@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useHistory } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
@@ -21,6 +21,8 @@ function App() {
   const [user, setUser] = useState({ user: "", password: "" });
   const [error, setError] = useState("");
 
+  const history = useHistory();
+
   const login = (details) => {
     console.log(details);
     if (
@@ -33,6 +35,7 @@ function App() {
         password: details.password,
       });
       setError("");
+      history.push("/balances");
     } else {
       setUser({ user: "", password: "" });
       setError("details do not match");
@@ -53,7 +56,7 @@ function App() {
           <Dashboard />
         </Route>
         <Route path="/balances">
-          <Balances />
+          <Balances adminUser={adminUser}/>
         </Route>
         <Route path="/spending">
           <Spending />
