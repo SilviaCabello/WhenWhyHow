@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
+    <div className="container-background">
     <div className="container">
-      <div className="background-homepage"></div>
+      <div className="background-homepage">
       <img
         className="picture"
         src="https://res.cloudinary.com/dnefeccae/image/upload/v1623401665/pexels-andrea-piacquadio-3781660_e8ffrj.jpg"
         alt=""
       />
+      </div>
 
       <div className="intro-text">
         <p>
@@ -49,6 +51,7 @@ function Home() {
           alt=""
         />
       </div>
+    </div>
     </div>
   );
 }
