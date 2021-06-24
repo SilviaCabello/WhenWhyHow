@@ -4,13 +4,13 @@ import MainBank from "./MainBank";
 import spendings from "./spendings.png";
 import { useState, adminUser } from "react";
 
+
 function Balances({ adminUser }) {
   return (
     <div className="Welcome">
       <h14>
         Welcome, <span>{adminUser.user}</span>
       </h14>
-
       <img
         className="balances-illustration"
         src="https://i.imgur.com/D0kRo6u.jpg"
