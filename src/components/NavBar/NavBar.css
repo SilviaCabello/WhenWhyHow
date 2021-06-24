@@ -195,12 +195,12 @@
 
   .logo {
     max-width: 80%;
-    padding-top: 15px;
+    padding-top: 17px;
   }
 
   .navbar-items {
     background: black;
-    height: 9vh;
+    height: 10vh;
     text-decoration: none;
   }
 
@@ -216,7 +216,7 @@
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: -200%;
     transition: all 0.5s ease;
     padding: 0px;
