@@ -1,17 +1,21 @@
 import "./LogIn.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 function LogIn({ login, error }) {
   const [details, setDetails] = useState({ user: "", password: "" });
-
-  const submitHandler = (e) => {
+  const handleClick = (e) => {
     e.preventDefault();
     login(details);
   };
 
+  /*const submitHandler = (e) => {
+    e.preventDefault();
+    login(details);
+  };*/
+
   return (
-    <form onSubmit={submitHandler}>
+    <form>
       <div className="login-container">
         <div className="signin-container">
           <div className="title-signin">
@@ -48,14 +52,12 @@ function LogIn({ login, error }) {
         </div>
 
         <div className="signin">
-          
-            <input
-              type="submit"
-              value="LogIn"
-              className="button2"
-              onChange={LogIn}
-            />
-          
+          <input
+            type="submit"
+            value="LogIn"
+            className="button2"
+            onClick={handleClick}
+          />
 
           {error != "" ? <div className="error">{error}</div> : ""}
         </div>
