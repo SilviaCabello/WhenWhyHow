@@ -1,17 +1,29 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spending-card {
+  background-color: whitesmoke;
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 5px 7px 8px 3px rgba(0, 0, 0, 0.48);
+  margin: 30px 0;
+}
+
 .donut-container {
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin: 50px 20px;
 }
 
-.donut.chart {
+.donutchart {
   width: 80%;
-  height: 400px;
+  height: 300px;
 }
 .donutchart-legend-item {
-  font-size: 18px;
+  font-size: 40px;
   font-family: Verdana;
 }
 
@@ -28,6 +40,7 @@
 }
 .spending-title {
   text-align: center;
+  font-size: 30px;
   margin: 40px 0;
 }
 

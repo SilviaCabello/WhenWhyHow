@@ -1,3 +1,5 @@
+import "./SpiderChart.css";
+
 import React from "react";
 import {
   Radar,
@@ -14,23 +16,23 @@ const data = [
     fullMark: 35,
   },
   {
-    subject: "Other Bank Marketing Campaigns",
+    subject: "Other Banks",
     A: 21,
     fullMark: 35,
   },
   {
-    subject: "Stock Market crashes",
+    subject: "Stock Market Crashes",
     A: 7,
     fullMark: 35,
   },
 
   {
-    subject: "Bank own campaings",
+    subject: "Bank Own Campaings",
     A: 16,
     fullMark: 35,
   },
   {
-    subject: "Economic news",
+    subject: "Economic News",
     A: 3,
     fullMark: 35,
   },
@@ -38,24 +40,31 @@ const data = [
 
 export default function BarDiagram() {
   return (
-    <RadarChart
-      cx={300}
-      cy={250}
-      outerRadius={150}
-      width={800}
-      height={500}
-      data={data}
-    >
-      <PolarGrid />
-      <PolarAngleAxis dataKey="subject" />
-      <PolarRadiusAxis />
-      <Radar
-        name="Mike"
-        dataKey="A"
-        stroke="#8884d8"
-        fill="#8884d8"
-        fillOpacity={0.6}
-      />
-    </RadarChart>
+    <div className="card-container">
+      <div className="spending-card">
+        <h5 className="spending-title">Reactivity Index</h5>
+        <div className="donut-container">
+          <RadarChart
+            cx={250}
+            cy={150}
+            outerRadius={120}
+            width={500}
+            height={300}
+            data={data}
+          >
+            <PolarGrid />
+            <PolarAngleAxis dataKey="subject" />
+            <PolarRadiusAxis />
+            <Radar
+              name="Mike"
+              dataKey="A"
+              stroke="#8884d8"
+              fill="#8884d8"
+              fillOpacity={0.6}
+            />
+          </RadarChart>
+        </div>
+      </div>
+    </div>
   );
 }
