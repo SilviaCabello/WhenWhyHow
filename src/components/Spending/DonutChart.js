@@ -2,7 +2,7 @@ import DonutChart from "react-donut-chart";
 import "./DonutChart.css";
 //things I would never do:
 
-function PieChart() {
+function Donut() {
   return (
     <div>
       <h5 className="spending-title">Spending Categories</h5>
@@ -35,8 +35,6 @@ function PieChart() {
               value: 602.34,
             },
           ]}
-          height={380}
-          width={600}
           innerRadius={0.5}
           colors={[
             "#e9dc79",
@@ -52,4 +50,4 @@ function PieChart() {
   );
 }
 
-export default PieChart;
+export default Donut;

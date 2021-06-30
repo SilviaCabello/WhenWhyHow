@@ -6,6 +6,10 @@
   margin: 50px 20px;
 }
 
+.donut.chart {
+  width: 80%;
+  height: 400px;
+}
 .donutchart-legend-item {
   font-size: 18px;
   font-family: Verdana;
