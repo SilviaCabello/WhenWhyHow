@@ -1,7 +1,7 @@
 import "./Spending.css";
-import PieChart from "./PieChart";
-import DonutChart from "react-donut-chart";
+import Donut from "./DonutChart";
 import SelectBank from "./SelectBank";
+import BarDiagram from "./BarDiagram";
 
 function Spending() {
   return (
@@ -10,7 +10,8 @@ function Spending() {
         Available Cash <b>5388,23€</b>
       </p>
       <SelectBank />
-      <PieChart />
+      <Donut />
+      <BarDiagram />
     </div>
   );
 }
