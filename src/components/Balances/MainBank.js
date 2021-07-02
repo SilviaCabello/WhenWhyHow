@@ -5,9 +5,9 @@ import { Accordion, Card, Button } from "react-bootstrap";
 
 export default function MainBank() {
   return (
-    <div>
-      <Accordion>
-        <Card>
+    <div className="accordionContainer">
+      <Accordion className="Acordion-Balances">
+        <Card className="card-balances">
           <Card.Header className="card-header-mainbank">
             <Accordion.Toggle
               className="toggle-MainBank"
@@ -36,7 +36,7 @@ export default function MainBank() {
             </Card.Body>
           </Accordion.Collapse>
         </Card>
-        <Card>
+        <Card className="card-balances">
           <Card.Header className="card-header-secondbank">
             <Accordion.Toggle
               className="toggle-SecondBank"
@@ -51,8 +51,8 @@ export default function MainBank() {
             <Card.Body>Records</Card.Body>
           </Accordion.Collapse>
         </Card>
-        <Card>
-          <Card.Header className="card-second-mainbank">
+        <Card className="card-balances">
+          <Card.Header className="card-header-secondbank">
             <Accordion.Toggle
               className="toggle-SecondBank"
               as={Button}

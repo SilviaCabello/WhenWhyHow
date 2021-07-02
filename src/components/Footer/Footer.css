@@ -1,48 +1,57 @@
-.footer-container {
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  text-align: center;
-  background-color: black;
+/*----desktop-----*/
+@media screen and (min-width: 350px) {
+  .footer-container {
+    /*right: 0;
+    bottom: 0;
+    padding: 1rem;
+    background-color: black;*/
+    padding: 5px;
+    background: black;
+  }
+
+  .title-footer {
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -30px;
+  }
+
+  .conection-title,
+  .icons {
+    display: flex;
+    justify-content: center;
+    padding: 1.3em;
+    margin: 10px;
+    color: white;
+  }
+
+  .icons-footer {
+    height: 50px;
+    margin: 10px;
+    font-size: 20px;
+  }
+
+  .icons-footer {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #eede5b;
+  }
+
+  .icons-footer :hover {
+    font-size: 30px;
+    transition: 0.2s;
+  }
+
+  .footer {
+    margin-top: -25px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+  }
 }
 
-.title-footer {
-  padding: 1.5em;
-  color: white;
-}
-.conection-title,
-.icons {
-  display: flex;
-  justify-content: center;
-  padding: 1.3em;
-  margin: 10px;
-  color: white;
-}
-
-.icons-footer {
-  height: 50px;
-  margin: 10px;
-  font-size: 20px;
-}
-
-.icons-footer {
-  font-size: 30px;
-  margin-bottom: 30px;
-  color: #eede5b;
-}
-
-.icons-footer :hover {
-  font-size: 30px;
-  transition: 0.2s;
-}
-
-.footer {
-  margin-top: -25px;
-  text-align: center;
-  font-size: 10px;
-  color: white;
-}
+/*-----Mobile-----*/
 @media screen and (max-width: 600px) {
   .footer-container {
     right: 0;
@@ -56,6 +65,8 @@
   .title-footer {
     padding: 1.5em;
     color: white;
+    margin-top: -35px;
+    margin-bottom: -50px;
   }
   .conection-title,
   .icons {
