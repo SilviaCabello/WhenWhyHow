@@ -14,6 +14,14 @@ import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 
 library.add(fab, faCheckSquare);
 function App() {
+  const [collapsible, setCollapsible] = useState(true);
+  const [bank, setBank] = useState("Bank 1");
+
+  function handleCollapsible() {
+    setCollapsible(!collapsible);
+    console.log(collapsible);
+    console.log(bank);
+  }
   const adminUser = {
     user: "juan",
     password: "1234",
@@ -56,10 +64,15 @@ function App() {
           <Dashboard />
         </Route>
         <Route path="/balances">
-          <Balances adminUser={adminUser}/>
+          <Balances adminUser={adminUser} />
         </Route>
         <Route path="/spending">
-          <Spending />
+          <Spending
+            collapsible={collapsible}
+            handleCollapsible={handleCollapsible}
+            bank={bank}
+            setBank={setBank}
+          />
         </Route>
         <Route exact path="/">
           <Home />
