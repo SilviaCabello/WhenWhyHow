@@ -1,34 +1,27 @@
-/* Styling for Menu */
+/* Desktop Version */
 
-@media screen and (min-width: 350px) {
+@media (min-width: 961px) {
   .logo {
     display: flex;
-    width: 90px;
+    width: 4rem;
     height: 100%;
     float: left;
   }
 
   .navbar-items {
     background: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 15vh;
+    height: 12vh;
     width: 100%;
   }
 
   .nav-menu {
-    background: black;
+    background: transparent;
     display: flex;
-    justify-content: space-between;
     list-style: none;
-    width: 50vw;
-    margin-right: 7rem;
   }
 
   .menu-list {
     display: flex;
-    height: 140px;
   }
 
   a {
@@ -37,14 +30,23 @@
   }
 
   .nav-links {
-    letter-spacing: 3px;
-    padding: 2.5rem;
+    display: flex;
+    padding: 15px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: 500;
     list-style: none;
-    font-size: 1.5rem;
-    border-radius: 3px;
-    padding: 20px;
+    font-size: 22px;
+    border-radius: 13px;
+  }
+
+  .NavBar-li {
+    background: none;
+    color: white;
+    font-weight: 600; 
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 20px;  
+    padding: 20px; 
   }
 
   .nav-links:hover {
@@ -56,16 +58,6 @@
     color: black !important;
   }
 
-  .NavBar-li {
-    background: none;
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-flex;
-    padding-top: 50px;
-  }
 
   .menu-list {
     background: none;
@@ -92,23 +84,107 @@
     font-size: 5rem;
     border-radius: 3px;
   }
+
 }
 
-@media screen and (max-width: 600px) {
-  .logo-container {
-    display: flex;
-    margin-top: 0px;
-    position: absolute;
-  }
+
+/* Tablets */
+@media screen and (max-width:960px) {
 
   .logo {
-    max-width: 70%;
-    padding-top: 15px;
+    display: flex;
+    width: 3rem;
+    height: 100%;
+    float: left;
+    margin-top: 0px;
   }
 
   .navbar-items {
     background: black;
-    height: 13vh;
+    display: inline-flex;
+    align-items: center;
+    height: 9vh;
+    width: 100%;
+  }
+
+  .nav-menu {
+    background: transparent;
+    display: flex;
+    list-style: none;
+    margin-bottom: 1rem,
+  }
+
+  .menu-list {
+    display: flex;
+    height: 120px;
+  }
+
+  a {
+    text-decoration: none;
+    background: none;
+  }
+
+  .nav-links {
+    display: flex;
+    padding: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 22px;
+    border-radius: 13px;
+  }
+
+  .NavBar-li {
+    background: none;
+    color: white;
+    font-weight: 600; 
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 30px;  
+    padding: 40px; 
+  }
+
+  .menu-list {
+    background: none;
+    text-decoration: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: none;
+  }
+
+  .logo-container {
+    display: flex;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+}
+
+
+
+/* Mobile Version */
+
+@media screen and (max-width: 480px) {
+  .logo-container {
+    display: flex;
+    margin-top: 1px;
+    position: absolute;
+  }
+
+  .logo {
+    width: 3rem;
+    padding-top: 25px;
+  }
+
+  .navbar-items {
+    background: black;
+    height: 10vh;
     text-decoration: none;
   }
 
@@ -124,7 +200,7 @@
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: -200%;
     transition: all 0.5s ease;
     padding: 0px;
@@ -137,7 +213,7 @@
     opacity: 1;
     transition: all 0.9s ease-out;
     z-index: 2;
-    margin-top: 25px;
+    margin-top: 10px;
   }
 
   .NavBar-li {
@@ -147,7 +223,7 @@
     letter-spacing: 3px;
     color: #eede5b;
     font-weight: 500;
-    padding-top: 0;
+    padding-top: 0px;
     padding-bottom: 0px;
     margin: 0;
   }
@@ -157,7 +233,7 @@
     text-align: center;
     width: 100%;
     margin: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     padding-top: 50px;
   }
 
@@ -167,7 +243,7 @@
     color: #eede5b;
     display: flex;
     position: absolute;
-    top: 0rem;
+    top: 0px;
     right: 1rem;
     transform: translate(-50%, 60%);
     font-size: 3rem;

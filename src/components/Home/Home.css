@@ -1,3 +1,14 @@
+.back {
+  background-image: url("https://res.cloudinary.com/dnefeccae/image/upload/v1623946169/whenwhyHow/pexels-henry--co-2628393_2_exs5ii.jpg");
+}
+.container-background {
+  background-image: url("https://res.cloudinary.com/dnefeccae/image/upload/v1624546542/whenwhyHow/A5fcFPq_cghyfg.jpg"),
+    url("https://res.cloudinary.com/dnefeccae/image/upload/v1624546550/whenwhyHow/BJ22PP1_ioyebj.jpg");
+  background-repeat: no-repeat;
+  background-position: left, right;
+  background-size: contain;
+}
+
 .picture {
   width: 100%;
 }
@@ -19,7 +30,7 @@
   background: #f1df68;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
-  border:none;
+  border: none;
   padding: 10px;
   margin-bottom: 3rem;
 }
@@ -36,6 +47,12 @@
   margin-bottom: 5rem;
 }
 @media screen and (max-width: 812px) {
+  .container-background {
+    background-image: none;
+    background-repeat: none;
+    background-position: none;
+    background-size: none;
+  }
   .picture {
     width: 100%;
   }
@@ -76,5 +93,3 @@
     margin-bottom: 3rem;
   }
 }
-
-
