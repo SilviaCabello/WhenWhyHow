@@ -14,6 +14,14 @@ import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 
 library.add(fab, faCheckSquare);
 function App() {
+  const [collapsible, setCollapsible] = useState(true);
+  const [bank, setBank] = useState("Bank 1");
+
+  function handleCollapsible() {
+    setCollapsible(!collapsible);
+    console.log(collapsible);
+    console.log(bank);
+  }
   return (
     <div className="App">
       <NavBar />
@@ -28,7 +36,12 @@ function App() {
           <Balances />
         </Route>
         <Route path="/spending">
-          <Spending />
+          <Spending
+            collapsible={collapsible}
+            handleCollapsible={handleCollapsible}
+            bank={bank}
+            setBank={setBank}
+          />
         </Route>
         <Route exact path="/">
           <Home />
