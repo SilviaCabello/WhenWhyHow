@@ -1,0 +1,163 @@
+/*---desktop-----*/
+
+@media screen and (min-width: 350px) {
+  .signin-container {
+    height: 150px;
+    background: #f4f5f5;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .title-signin {
+    width: 281px;
+    background: #f1df68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputuser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    width: 310px;
+    height: 35px;
+    left: 40px;
+    top: 281px;
+  }
+  .column1 {
+    display: flex;
+    flex: 1;
+  }
+  .column2 {
+    display: flex;
+    flex: 2;
+  }
+
+  .label-user {
+    height: 69px;
+    top: 264px;
+    background: #f4f5f5;
+    margin-bottom: 10%;
+    margin: 10%;
+  }
+  .label-password {
+    height: 74px;
+    top: 384px;
+    background: #f4f5f5;
+    margin-bottom: 10%;
+    margin: 10%;
+  }
+  .forgotten-psw {
+    width: 127px;
+    height: 14px;
+    left: 36px;
+    top: 476px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    color: #1f5495;
+    margin: 20px;
+  }
+  .signin,
+  .button2 {
+    width: 181px;
+    height: 49px;
+    left: 98px;
+    top: 551px;
+    background: #f1df68;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 30%;
+    margin-inline: auto;
+  }
+}
+
+/*-----Mobile-----*/
+@media screen and (max-width: 600px) {
+  .signin-container {
+    height: 150px;
+    top: 65px;
+    background: #f4f5f5;
+  }
+  .title-signin {
+    width: 281px;
+    height: 50px;
+    left: 44px;
+    top: 102px;
+
+    background: #f1df68;
+  }
+
+  .label-user {
+    height: 69px;
+    left: 5px;
+    top: 264px;
+
+    background: #f4f5f5;
+  }
+  .label-password {
+    height: 74px;
+    left: 0px;
+    top: 384px;
+
+    background: #f4f5f5;
+  }
+  .forgotten-psw {
+    width: 127px;
+    height: 14px;
+    left: 36px;
+    top: 476px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    color: #1f5495;
+    margin: 20px;
+  }
+  .inputuser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8px;
+    margin-inline: auto;
+    width: 200px;
+    height: 25px;
+    left: 40px;
+  }
+  .signin,
+  .button2 {
+    width: 181px;
+    height: 49px;
+    left: 98px;
+    top: 551px;
+
+    background: #f1df68;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 30%;
+    margin-inline: auto;
+  }
+}
