@@ -22,7 +22,7 @@ function Balances({ adminUser }) {
       <MainBank />
 
       <div className="balances-categories">
-        <Link to="/spending">
+        {/* <Link to="/spending">
           <img className="spendings-category" src={spendings} alt="Spendings" />
         </Link>
         <img
@@ -32,7 +32,23 @@ function Balances({ adminUser }) {
         <img
           src="https://res.cloudinary.com/dwjfpjuhh/image/upload/v1623401115/wwh/digitalchanels_yju1qs.png"
           alt="Digital chanels"
-        />
+        /> */}
+
+        <div className="spendings-card">
+          <img className="card-icon-balances" src="https://i.imgur.com/2fqg5Ki.png" alt="spendings-icon"/>
+          <p className="card-title">Spendings</p>
+        </div>
+        
+        <div className="spendings-card">
+          <img className="card-icon-balances" src="https://i.imgur.com/2fqg5Ki.png" alt="spendings-icon"/>
+          <p className="card-title">Spendings</p>
+        </div>
+
+        <div className="spendings-card">
+          <img className="card-icon-balances" src="https://i.imgur.com/2fqg5Ki.png" alt="spendings-icon"/>
+          <p className="card-title">Spendings</p>
+        </div>
+
       </div>
     </div>
   );
