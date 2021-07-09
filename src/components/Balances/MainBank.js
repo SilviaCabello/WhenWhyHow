@@ -8,9 +8,9 @@ export default function MainBank() {
     <div className="accordionContainer">
       <Accordion className="Acordion-Balances">
         <Card className="card-balances">
-          <Card.Header className="card-header-mainbank">
+          <Card.Header className="card-header-mainbank-balances">
             <Accordion.Toggle
-              className="toggle-MainBank"
+              className="toggle-MainBank-balances"
               as={Button}
               variant="link"
               eventKey="0"
@@ -37,7 +37,7 @@ export default function MainBank() {
           </Accordion.Collapse>
         </Card>
         <Card className="card-balances">
-          <Card.Header className="card-header-secondbank">
+          <Card.Header className="card-header-secondbank-balances">
             <Accordion.Toggle
               className="toggle-SecondBank"
               as={Button}
@@ -52,7 +52,7 @@ export default function MainBank() {
           </Accordion.Collapse>
         </Card>
         <Card className="card-balances">
-          <Card.Header className="card-header-secondbank">
+          <Card.Header className="card-header-secondbank-balances">
             <Accordion.Toggle
               className="toggle-SecondBank"
               as={Button}
