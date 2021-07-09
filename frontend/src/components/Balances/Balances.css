@@ -1,7 +1,19 @@
+.welcome-balances {
+  text-align: center;
+  font-weight:800;
+  
+}
+
+div.card-balances.card {
+  border-radius: 0;
+  border: 1px solid rgb(225, 225, 225);
+  padding: 0;
+}
+
 .balances-illustration {
   width: 90%;
   display: block;
-  margin: 10px auto 10px auto;
+  margin: 20px auto 20px auto;
 }
 
 .balances-totalcash {
@@ -13,27 +25,14 @@
 }
 
 .balances-categories {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  /* display: block;
-  margin: 0 auto; */
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  
 }
 
-.balances-categories img {
-  width: 100px;
-  height: 100px;
-  margin: 30px 5px 30px 5px;
-}
-
-.spendings-category {
-  box-shadow: 2px 2px 15px 1px #cbcbcb !important;
-}
-
-.toggle-MainBank {
-  color: black !important;
+.toggle-MainBank-balances {
+  color: rgb(255, 255, 255) !important;
   font-weight: bold !important;
   text-decoration: none !important;
 }
@@ -43,8 +42,13 @@
   text-decoration: none !important;
 }
 
-.card-header-mainbank {
-  background-color: #dddddd !important;
+.card-header-mainbank-balances {
+  background-color: #000000 !important;
+  border: 0 !important;
+}
+
+.card-header-secondbank-balances {
+  background-color: #e6eaef !important;
 }
 
 .MainBank-Records {
@@ -57,6 +61,70 @@
 
 .card-header {
   height: 80px;
+}
+
+.spendings-card {
+  height: 100px;
+  width: 100px;
+  background-color: #01549a;
+  border-radius: 5px;
+  box-shadow: 1px 1px 7px 1px #898989;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.banking-card {
+  height: 100px;
+  width: 100px;
+  background-color: #e6eaef;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.digital-card {
+  height: 100px;
+  width: 100px;
+  background-color: #01549a;
+  border-radius: 5px;
+  box-shadow: 1px 1px 7px 1px #898989;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.spendings-card:hover{
+  box-shadow: 4px 4px 15px 2px #898989;
+  background-color: #00437a;
+}
+.digital-card:hover{
+  box-shadow: 4px 4px 15px 2px #898989;
+  background-color: #00437a;
+}
+
+
+.card-title {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 12px;
+  margin-top: 7px;
+}
+.card-title-habits {
+  color: rgb(108, 108, 108);
+  text-align: center;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.card-icon-balances {
+  width: 40px !important;
+  height: 40px !important;
+  display: block !important;
+  margin: 20px auto auto 27px !important;
+}
+
+.card-icon-balances-habits {
+  width: 30px !important;
+  height: 40px !important;
+  display: block !important;
+  margin: 20px auto auto 35px !important;
 }
 
 /*---------- Desktop Version ----------*/
