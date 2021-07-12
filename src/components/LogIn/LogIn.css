@@ -22,33 +22,40 @@
     justify-content: center;
     align-items: center;
     margin-left: 80px;
-    width: 310px;
+    width: 410px;
     height: 35px;
     left: 40px;
     top: 281px;
   }
+  .form-calendar {
+    margin-right: 100px;
+  }
   .column1 {
     display: flex;
-    flex: 1;
+    flex: 1 1;
+    justify-content: space-between;
   }
+
   .column2 {
     display: flex;
     flex: 2;
   }
 
   .label-user {
-    height: 69px;
+    height: 89px;
     top: 264px;
     background: #f4f5f5;
     margin-bottom: 10%;
     margin: 10%;
+    width: 600px;
   }
   .label-password {
-    height: 74px;
+    height: 89px;
     top: 384px;
     background: #f4f5f5;
     margin-bottom: 10%;
     margin: 10%;
+    width: 600px;
   }
   .forgotten-psw {
     width: 127px;
@@ -68,19 +75,19 @@
   }
   .signin,
   .button2 {
-    width: 181px;
-    height: 49px;
-    left: 98px;
-    top: 551px;
+    display: flex;
+    justify-content: center;
+    width: 281px;
+    height: 50px;
+    left: 47px;
+    top: 337px;
     background: #f1df68;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    color: #000000;
-    margin-bottom: 30%;
-    margin-inline: auto;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
   }
 }
 
