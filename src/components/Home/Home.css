@@ -1,0 +1,94 @@
+.back {
+  background-image: url("https://res.cloudinary.com/dnefeccae/image/upload/v1623946169/whenwhyHow/pexels-henry--co-2628393_2_exs5ii.jpg");
+}
+.container-background {
+  background-image: url("https://res.cloudinary.com/dnefeccae/image/upload/v1624546542/whenwhyHow/A5fcFPq_cghyfg.jpg"),
+    url("https://res.cloudinary.com/dnefeccae/image/upload/v1624546550/whenwhyHow/BJ22PP1_ioyebj.jpg");
+  background-repeat: no-repeat;
+  background-position: left, right;
+  background-size: contain;
+}
+
+.picture {
+  width: 100%;
+}
+.intro-text {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.explore-profile {
+  display: flex;
+  justify-content: center;
+}
+.profile-btn {
+  display: flex;
+  justify-content: center;
+  width: 281px;
+  height: 50px;
+  left: 47px;
+  top: 337px;
+  background: #f1df68;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 3rem;
+}
+.intro-box {
+  width: 146px;
+  height: 122px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  margin: 10px;
+}
+.intro-boxcontainer {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 812px) {
+  .container-background {
+    background-image: none;
+    background-repeat: none;
+    background-position: none;
+    background-size: none;
+  }
+  .picture {
+    width: 100%;
+  }
+  .intro-text {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .explore-profile {
+    display: flex;
+    justify-content: center;
+  }
+  .profile-btn {
+    display: flex;
+    justify-content: center;
+    width: 281px;
+    height: 50px;
+    left: 47px;
+    top: 337px;
+    background: #f1df68;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 3rem;
+    padding: 10px;
+  }
+  .intro-box {
+    width: 146px;
+    height: 122px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  .intro-boxcontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+}
