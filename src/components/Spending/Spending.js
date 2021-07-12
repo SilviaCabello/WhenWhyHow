@@ -1,9 +1,6 @@
 import "./Spending.css";
 import Donut from "./Donut";
-// import SelectBank from "./SelectBank";
-import BarDiagram from "./BarDiagram";
-import DonutDigChannel from "./DonutDigChannels";
-import Collapsible from "./Collapsible";
+import NavigationCards from "../Balances/NavigationCards";
 
 function Spending({ bank, setBank, collapsible, handleCollapsible }) {
   return (
@@ -11,16 +8,9 @@ function Spending({ bank, setBank, collapsible, handleCollapsible }) {
       <p className="balances-totalcash">
         Available Cash <b>5388,23€</b>
       </p>
-      {/* <SelectBank /> */}
-      <Collapsible
-        collapsible={collapsible}
-        handleCollapsible={handleCollapsible}
-        bank={bank}
-        setBank={setBank}
-      />
+
       <Donut />
-      <BarDiagram />
-      <DonutDigChannel />
+      <NavigationCards />
     </div>
   );
 }
