@@ -27,9 +27,8 @@ function Footer() {
       </div>
 
       <div>
-        <p className="footer">
-          &copy;{new Date().getFullYear()} WhenWhyHow Corporation | All rights
-          reserved.
+        <p className="footer-rights">
+          &copy;{new Date().getFullYear()} WhenWhyHow Corporation | All rights reserved
         </p>
       </div>
     </div>
