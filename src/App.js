@@ -1,7 +1,6 @@
 import "./App.css";
 import { useState } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
-import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import LogIn from "./components/LogIn/LogIn";
@@ -47,7 +46,6 @@ function App() {
   };
   return (
     <div className="App">
-      <NavBar />
       <Switch>
         <Route path="/login">
           <LogIn login={login} error={error} />
