@@ -21,8 +21,8 @@ const NavBar = () => {
         },
     
         {
-            title: "Contact",
-            url: "/Contact",
+            title: "Logout",
+            url: "/",
             cName: "nav-links",
         },
     ]; 
