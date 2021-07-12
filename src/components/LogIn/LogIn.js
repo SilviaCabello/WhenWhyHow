@@ -1,6 +1,7 @@
 import "./LogIn.css";
 import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
+import NavBarLogin from "../NavBar/NavBarLogin";
 
 function LogIn({ login, error }) {
   const [details, setDetails] = useState({ user: "", password: "" });
@@ -16,6 +17,7 @@ function LogIn({ login, error }) {
 
   return (
     <form>
+      <NavBarLogin />
       <div className="login-container">
         <div className="signin-container">
           <div className="title-signin">
