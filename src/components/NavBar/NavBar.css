@@ -179,7 +179,7 @@
 
   .logo {
     width: 3rem;
-    padding-top: 25px;
+    padding-top: 15px;
   }
 
   .navbar-items {
@@ -232,9 +232,9 @@
     display: block;
     text-align: center;
     width: 100%;
-    margin: 0px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 
   .menu-icon {
