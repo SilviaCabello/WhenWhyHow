@@ -32,27 +32,30 @@ function Home() {
           <button className="profile-btn">Login your Profile</button>
         </Link>
       </div>
-      <div className="intro-boxcontainer">
-        <img
-          className="intro-box"
-          src="https://res.cloudinary.com/dnefeccae/image/upload/v1623398397/Group_11_tslx41.png"
-          alt=""
-        />
-        <img
-          className="intro-box"
-          src="https://res.cloudinary.com/dnefeccae/image/upload/v1623398398/Group_12_ukbnrw.png"
-          alt=""
-        />
-        <img
-          className="intro-box"
-          src="https://res.cloudinary.com/dnefeccae/image/upload/v1623398401/Group_13_dgjud1.png"
-          alt=""
-        />
-        <img
-          className="intro-box"
-          src="https://res.cloudinary.com/dnefeccae/image/upload/v1623398405/Group_14_tywqtu.png"
-          alt=""
-        />
+
+
+      <div className="home-cards-container">
+        
+        <div className="home-card">
+          <img className="icon-home-card" src="https://i.imgur.com/rMdfN43.png" alt="Observe your bank behavior better"/>
+          <p className="text-home-card">Observe your bank behavior better</p>
+        </div>
+
+        <div className="home-card">
+          <img className="icon-home-card" src="https://i.imgur.com/1fusPxw.png" alt="Identify new trends and patterns"/>
+          <p className="text-home-card">Identify new trends and patterns</p>
+        </div>
+
+        <div className="home-card">
+          <img className="icon-home-card" src="https://i.imgur.com/a12fpkL.png" alt="Get regular updates when salary comes in"/>
+          <p className="text-home-card">Get regular updates when salary comes in</p>
+        </div>
+
+        <div className="home-card">
+          <img className="icon-home-card" src="https://i.imgur.com/MdbpwET.png" alt="Get new ideas for smart investments"/>
+          <p className="text-home-card">Get new ideas for smart investments</p>
+        </div>
+
       </div>
       </div>
     </div>
