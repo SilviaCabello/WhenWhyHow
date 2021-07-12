@@ -1,10 +1,13 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
+import NavBarHome from "../NavBar/NavBarHome";
 
 function Home() {
   return (
+   <div>
+     <NavBarHome />
     <div className="container-background">
-    <div className="container">
+      <div className="container">
       <div className="background-homepage">
       <img
         className="picture"
@@ -51,8 +54,9 @@ function Home() {
           alt=""
         />
       </div>
+      </div>
     </div>
-    </div>
+   </div>
   );
 }
 

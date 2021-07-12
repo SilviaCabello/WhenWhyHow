@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import "./NavBar.css";
 
 
-const NavBar = () => {
+const NavBarSpending = () => {
 
     const MenuLinks = [
         {
@@ -21,8 +21,8 @@ const NavBar = () => {
         },
     
         {
-            title: "Contact",
-            url: "/Contact",
+            title: "Logout",
+            url: "/",
             cName: "nav-links",
         },
     ]; 
@@ -63,5 +63,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar; 
-
+export default NavBarSpending; 
