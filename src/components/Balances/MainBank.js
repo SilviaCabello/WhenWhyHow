@@ -22,15 +22,15 @@ export default function MainBank() {
             <Card.Body>
               <ul className="MainBank-Records">
                 <li>
-                  Pie Me Restaurant Bonn &nbsp; &nbsp; 32,98€ <br></br>09.05.21
+                  Pie Me Restaurant Bonn &nbsp; 32,98€ &nbsp;  09.05.21 
                 </li>
                 <br></br>
                 <li>
-                  Rewe Supermarkt Bonn &nbsp; &nbsp; 47,99€ <br></br>09.05.21
+                  Rewe Supermarkt Bonn &nbsp; 47,99€ &nbsp; 09.05.21
                 </li>
                 <br></br>
                 <li>
-                  Ernst Kaffeeröster Köln &nbsp; &nbsp; 18,96€ <br></br>09.05.21
+                  Ernst Kaffeeröster Köln &nbsp; 18,96€ &nbsp; 09.05.21
                 </li>
               </ul>
             </Card.Body>
