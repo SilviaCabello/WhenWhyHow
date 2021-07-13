@@ -158,4 +158,9 @@ div.card-balances.card {
     background-position: left, right;
     background-size: contain;
   }
+
+  .MainBank-Records {
+    text-align: left;
+    font-size: 16px;
+  }
 }
