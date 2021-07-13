@@ -4,27 +4,13 @@
   .signin-container {
     height: 150px;
     background: #f4f5f5;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
-
-  .calender-img {
-    width: 250px;
-  }
-
-  .image-input-container{
-    display: flex;
-    justify-content: center;
-    
-  }
-  .title-login{
-    font-weight: 800; 
-
-  }
-
-  .title-signin {
+  
+  .heading-container {
     width: 700px;
     padding-top: 20px;
     display: flex;
@@ -32,6 +18,21 @@
     text-align: center;
     
   }
+
+  .heading{
+    font-weight: 800; 
+  }
+
+
+  .calender-img {
+    width: 300px;
+  }
+
+  .image-input-container{
+    display: flex;
+    justify-content: center;
+  }
+
   
   .label-input{
     margin-left: 10px;
@@ -45,13 +46,12 @@
     margin-left: 10px;
     margin-right: 10px;
     width: 400px;
-    height: 50px;
+    height: 60px;
     left: 40px;
     top: 281px;
     border: none;
   }
 
- 
 
   .label-user,
   .label-password {
@@ -84,8 +84,8 @@
     border-radius: 30px;
     border: none;
     padding: 10px;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     font-weight: bold;
     margin-inline: auto;
 
