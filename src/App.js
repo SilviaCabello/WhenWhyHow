@@ -23,8 +23,8 @@ function App() {
     console.log(bank);
   }
   const adminUser = {
-    user: "juan",
-    password: "1234",
+    user: "user1@wwh.com",
+    password: "12345",
   };
   const [user, setUser] = useState({ user: "", password: "" });
   const [error, setError] = useState("");

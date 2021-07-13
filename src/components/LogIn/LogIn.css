@@ -1,6 +1,17 @@
 /*---desktop-----*/
 
 @media screen and (min-width: 350px) {
+  .back {
+    background-image: url("https://res.cloudinary.com/dnefeccae/image/upload/v1623946169/whenwhyHow/pexels-henry--co-2628393_2_exs5ii.jpg");
+  }
+  .login-container {
+    background-image: url("https://res.cloudinary.com/dnefeccae/image/upload/v1624546542/whenwhyHow/A5fcFPq_cghyfg.jpg"),
+      url("https://res.cloudinary.com/dnefeccae/image/upload/v1624546550/whenwhyHow/BJ22PP1_ioyebj.jpg");
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-size: contain;
+    margin-bottom: -100px;
+  }
   .signin-container {
     height: 150px;
     background: #f4f5f5;
@@ -9,7 +20,10 @@
     justify-content: space-evenly;
     align-items: center;
   }
-
+  p.welcome {
+    padding: 0;
+    margin-top: 0;
+  }
   .title-signin {
     width: 281px;
     background: #f1df68;
@@ -27,8 +41,17 @@
     left: 40px;
     top: 281px;
   }
+  .form {
+    margin: auto;
+    margin-left: 200px;
+    padding-left: 30px;
+    width: min-content;
+  }
   .form-calendar {
-    margin-right: 100px;
+    margin: auto;
+    margin-right: auto;
+    padding-right: 30px;
+    width: min-content;
   }
   .column1 {
     display: flex;
@@ -71,9 +94,12 @@
     /* identical to box height */
 
     color: #1f5495;
-    margin: 20px;
+    margin: auto;
   }
-  .signin,
+  .signin {
+    padding: 50px;
+  }
+
   .button2 {
     display: flex;
     justify-content: center;
@@ -88,11 +114,24 @@
     padding: 10px;
     margin-bottom: 3rem;
     margin-top: 1rem;
+    justify-items: center;
+    flex-direction: unset;
+    margin: auto;
+    margin-bottom: 100px;
   }
 }
 
 /*-----Mobile-----*/
 @media screen and (max-width: 600px) {
+  .back {
+    display: none;
+  }
+  .login-container {
+    background-image: none;
+    background-repeat: none;
+    background-position: none;
+    background-size: none;
+  }
   .signin-container {
     height: 150px;
     top: 65px;
@@ -106,11 +145,16 @@
 
     background: #f1df68;
   }
+  .form-calendar {
+    display: none;
+  }
 
   .label-user {
     height: 69px;
     left: 5px;
     top: 264px;
+    width: fit-content;
+    margin-left: 80px;
 
     background: #f4f5f5;
   }
@@ -118,6 +162,8 @@
     height: 74px;
     left: 0px;
     top: 384px;
+    width: fit-content;
+    margin-left: 80px;
 
     background: #f4f5f5;
   }
@@ -147,7 +193,7 @@
     height: 25px;
     left: 40px;
   }
-  .signin,
+
   .button2 {
     width: 181px;
     height: 49px;

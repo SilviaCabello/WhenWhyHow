@@ -16,16 +16,18 @@ function LogIn({ login, error }) {
 
   return (
     <div className="login-container">
+      <div className="back-ground">
       <div className="signin-container">
         <div className="title-signin">
-          <p>Sign in to Enter Your Profile</p>
+          <p className="welcome">Welcome to your Login</p>
         </div>
+      </div>
       </div>
       <div className="column1">
         <div className="column1">
           <form>
             <div className="label-user">
-              <label htmlFor="user">User:</label>
+              <label htmlFor="user">UserId:</label>
               <input
                 className="inputuser"
                 type="text"
@@ -53,7 +55,8 @@ function LogIn({ login, error }) {
             </div>
           </form>
           <div className="form-calendar">
-            <img className="form-calendar"
+            <img
+              className="form-calendar"
               src="https://res.cloudinary.com/dnefeccae/image/upload/v1625045085/whenwhyHow/Group_16_1_y9dbl2.png"
               alt="calendar"
             />
