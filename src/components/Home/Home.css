@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-position: left, right;
   background-size: contain;
+  margin-bottom: -4.4rem;
 }
 
 .picture {
@@ -32,7 +33,7 @@
   border-radius: 30px;
   border: none;
   padding: 10px;
-  margin-bottom: 3rem;
+  margin: 3rem;
   font-weight: bold;
 }
 .intro-box {
@@ -56,7 +57,7 @@
   grid-template-columns: repeat(2, auto);
   grid-gap: 35px;
   align-items: center;
-  margin: 10px 10px 50px 10px;
+  margin: 10px 10px 70px 10px;
 }
 
 .icon-home-card {
@@ -83,10 +84,9 @@
     width: 100%;
   }
   .intro-text {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    text-align: center;
+    display: none;
   }
+
   .explore-profile {
     display: flex;
     justify-content: center;
@@ -121,7 +121,6 @@
 }
 
 @media (min-width: 1024px) {
-
   .home-cards-container {
     grid-template-columns: repeat(4, auto);
     grid-gap: 40px;
@@ -132,5 +131,4 @@
   .home-card {
     /* margin: 0 !important; */
   }
-
 }
