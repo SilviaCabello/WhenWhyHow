@@ -20,8 +20,8 @@ function LogIn({ login, error }) {
       <NavBarLogin />
       
         <div className="signin-container">
-          <div className="title-signin">
-            <h3 className="title-login">Please enter your username and password</h3>
+          <div className="heading-container">
+            <h3 className="heading">Please enter your username and password</h3>
           </div>
         </div>
         <div className="image-input-container">
@@ -40,7 +40,7 @@ function LogIn({ login, error }) {
             <div className="label-password">
               <label className="label-input" htmlFor="password">Password</label>
               <input
-                className="inputuser"
+              className="inputuser"
                type="password"
                password="password"
                id="password"
