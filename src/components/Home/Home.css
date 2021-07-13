@@ -25,7 +25,7 @@
   justify-content: center;
   width: 281px;
   height: 50px;
-  left: 47px;
+  left: 50px;
   top: 337px;
   background: #f1df68;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -72,6 +72,8 @@
   padding: 0 10px 0 10px;
 }
 
+
+/* mobile version? */ 
 @media screen and (max-width: 812px) {
   .container-background {
     background-image: none;
@@ -94,16 +96,16 @@
   .profile-btn {
     display: flex;
     justify-content: center;
-    width: 281px;
+    width: 280px;
     height: 50px;
-    left: 47px;
-    top: 337px;
+    left: 50px;
+    top: 330px;
     background: #f1df68;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
     border-radius: 30px;
     margin-bottom: 3rem;
-    padding: 10px;
+    padding: 15px;
   }
   .intro-box {
     width: 146px;
@@ -120,6 +122,7 @@
   }
 }
 
+/* Desktop Version  */ 
 @media (min-width: 1024px) {
 
   .home-cards-container {

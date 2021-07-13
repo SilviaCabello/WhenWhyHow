@@ -40,7 +40,7 @@ function LogIn({ login, error }) {
             <div className="label-password">
               <label className="label-input" htmlFor="password">Password</label>
               <input
-                className="inputuser"
+              className="inputuser"
                type="password"
                password="password"
                id="password"

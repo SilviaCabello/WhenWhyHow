@@ -137,10 +137,8 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 14px;
-    /* identical to box height */
-
     color: #1f5495;
-    margin: 20px;
+    margin: 35px;
   }
   .inputuser {
     display: flex;
