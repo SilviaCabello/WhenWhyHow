@@ -1,4 +1,4 @@
-/*---desktop-----*/
+/*---desktop-----*/ 
 
 @media screen and (min-width: 350px) {
   .signin-container {
@@ -10,23 +10,40 @@
     align-items: center;
   }
 
+  .calender-img {
+    width: 250px;
+  }
+
+  .image-input-container{
+    display: flex;
+    justify-content: center;
+    
+  }
+
   .title-signin {
-    width: 281px;
+    width: 500px;
+    padding-top: 20px;
     background: #f1df68;
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
   }
+
   .inputuser {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-left: 80px;
-    width: 310px;
-    height: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 700px;
+    height: 50px;
     left: 40px;
     top: 281px;
+    border: none;
   }
+
   .column1 {
     display: flex;
     flex: 1;
@@ -36,94 +53,90 @@
     flex: 2;
   }
 
-  .label-user {
-    height: 69px;
-    top: 264px;
-    background: #f4f5f5;
-    margin-bottom: 10%;
-    margin: 10%;
-  }
+  .label-user,
   .label-password {
-    height: 74px;
-    top: 384px;
+    height: 100px;
+    width: 750px;
+    top: 300px;
     background: #f4f5f5;
-    margin-bottom: 10%;
-    margin: 10%;
-  }
-  .forgotten-psw {
-    width: 127px;
-    height: 14px;
-    left: 36px;
-    top: 476px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
-    /* identical to box height */
-
-    color: #1f5495;
     margin: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-  .signin,
-  .button2 {
-    width: 181px;
-    height: 49px;
-    left: 98px;
-    top: 551px;
-    background: #f1df68;
+
+  .forgotten-psw {
+    display: flex;
+    width: 250px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    color: #000000;
-    margin-bottom: 30%;
-    margin-inline: auto;
+    font-size: 18px;
+    color: #1f5495;
+    margin: 30px;
   }
+  
+  .button2 {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    height: 50px;
+    background: #f1df68;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    margin-inline: auto;
+
+  }
+
+  
 }
 
 /*-----Mobile-----*/
 @media screen and (max-width: 600px) {
+  .calender-img {
+    display: none !important;
+  }
+  
+  
   .signin-container {
     height: 150px;
     top: 65px;
     background: #f4f5f5;
   }
   .title-signin {
-    width: 281px;
-    height: 50px;
-    left: 44px;
-    top: 102px;
-
+    width: 400px;
+    height: 55px;
     background: #f1df68;
   }
 
-  .label-user {
-    height: 69px;
-    left: 5px;
-    top: 264px;
-
-    background: #f4f5f5;
-  }
+  .label-user,
   .label-password {
-    height: 74px;
-    left: 0px;
-    top: 384px;
-
-    background: #f4f5f5;
+    width: 350px;
+    height: 70px;
+    top: 60px;
+    margin: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-  .forgotten-psw {
-    width: 127px;
-    height: 14px;
-    left: 36px;
-    top: 476px;
 
+  .inputuser {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px !important;
+    width: 300px !important;
+    height: 30px !important;
+    top: 281px;
+    border: none;
+  }
+
+
+  .forgotten-psw {
+    width: 300px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     /* identical to box height */
 
@@ -140,24 +153,19 @@
     height: 25px;
     left: 40px;
   }
+
   .signin,
   .button2 {
-    width: 181px;
-    height: 49px;
-    left: 98px;
-    top: 551px;
-
+    width: 170px;
+    height: 50;
     background: #f1df68;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 15px;
     color: #000000;
-    margin-bottom: 30%;
     margin-inline: auto;
   }
 }

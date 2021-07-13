@@ -18,61 +18,57 @@ function LogIn({ login, error }) {
   return (
     <form>
       <NavBarLogin />
-      <div className="login-container">
+      
         <div className="signin-container">
           <div className="title-signin">
-            <p>Sign in to Enter Your Profile</p>
+            <p>Please enter your username and password</p>
           </div>
         </div>
-        <div className="colum1"></div>
-        <div className="form-calendar">
+        <div className="image-input-container">
+          <div className="label-password-container">
+            <div className="label-user">
+              <label htmlFor="user">Username</label>
+              <input
+                className="inputuser"
+                type="text"
+                username="user"
+                id="user"
+                onChange={(e) => setDetails({ ...details, user: e.target.value })}
+                value={details.user}
+              />
+            </div>
+            <div className="label-password">
+              <label htmlFor="password">Password</label>
+              <input
+                className="inputuser"
+               type="password"
+               password="password"
+               id="password"
+               onChange={(e) =>
+                setDetails({ ...details, password: e.target.value })
+                }
+                value={details.password}
+              />
+              </div>
+              <div className="forgotten-psw">
+                <p>Forgot your password?</p>
+              </div>
+            </div>
           <img
+            className="calender-img"
             src="https://res.cloudinary.com/dnefeccae/image/upload/v1625045085/whenwhyHow/Group_16_1_y9dbl2.png"
             alt="calendar"
-          />
-
-          <div className="label-user">
-            <label htmlFor="user">User:</label>
-            <input
-              className="inputuser"
-              type="text"
-              username="user"
-              id="user"
-              onChange={(e) => setDetails({ ...details, user: e.target.value })}
-              value={details.user}
-            />
-          </div>
-
-          <div className="label-password">
-            <label htmlFor="password">Password:</label>
-            <input
-              className="inputuser"
-              type="password"
-              password="password"
-              id="password"
-              onChange={(e) =>
-                setDetails({ ...details, password: e.target.value })
-              }
-              value={details.password}
-            />
-          </div>
+          /> 
         </div>
-      </div>
-
-      <div className="forgotten-psw">
-        <p>Forgot your password?</p>
-      </div>
-
-      <div className="signin">
-        <input
-          type="submit"
-          value="LogIn"
-          className="button2"
-          onClick={handleClick}
-        />
-
-        {error != "" ? <div className="error">{error}</div> : ""}
-      </div>
+        <div className="signin">
+          <input
+            type="submit"
+            value="Login"
+            className="button2"
+            onClick={handleClick}
+          />
+          {error != "" ? <div className="error">{error}</div> : ""}
+        </div>
     </form>
   );
 }

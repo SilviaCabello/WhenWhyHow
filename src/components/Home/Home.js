@@ -29,7 +29,7 @@ function Home() {
       </div>
       <div className="explore-profile">
         <Link to="/login">
-          <button className="profile-btn">Login your Profile</button>
+          <button className="profile-btn">Login to your Profile</button>
         </Link>
       </div>
 
