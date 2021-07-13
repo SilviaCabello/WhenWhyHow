@@ -121,7 +121,6 @@
     margin-bottom: 3rem;
   }
 }
-
 /* Desktop Version  */ 
 @media (min-width: 1024px) {
 
@@ -132,3 +131,10 @@
 
     /* margin: 20px auto 70px auto; */
   }
+
+  .home-card {
+    margin: 0 !important;
+  }
+
+
+}
