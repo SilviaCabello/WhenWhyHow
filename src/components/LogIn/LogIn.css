@@ -1,6 +1,12 @@
 /*---desktop-----*/ 
 
 @media screen and (min-width: 350px) {
+
+  .login-content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
   .signin-container {
     height: 150px;
     background: #f4f5f5;

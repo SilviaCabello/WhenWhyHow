@@ -16,9 +16,9 @@ function LogIn({ login, error }) {
   };*/
 
   return (
-    <div>
+    <div className="wrapper">
       <NavBarLogin />
-      
+      <div className="login-content">
         <div className="signin-container">
           <div className="heading-container">
             <h3 className="heading">Please enter your username and password</h3>
@@ -69,7 +69,9 @@ function LogIn({ login, error }) {
           />
           {error != "" ? <div className="error">{error}</div> : ""}
         </div>
+      </div>
     </div>
+      
   );
 }
 
