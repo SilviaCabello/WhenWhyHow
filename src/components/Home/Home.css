@@ -5,8 +5,9 @@
   background-image: url("https://res.cloudinary.com/dnefeccae/image/upload/v1624546542/whenwhyHow/A5fcFPq_cghyfg.jpg"),
     url("https://res.cloudinary.com/dnefeccae/image/upload/v1624546550/whenwhyHow/BJ22PP1_ioyebj.jpg");
   background-repeat: no-repeat;
-  background-position: left, right;
+  background-position:left, right;
   background-size: contain;
+  height: 120vh;
 }
 
 .picture {
