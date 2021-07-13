@@ -179,7 +179,7 @@
 
   .logo {
     width: 3rem;
-    padding-top: 10px;
+    padding-top: 12px;
   }
 
   .navbar-items {
@@ -200,7 +200,7 @@
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: -200%;
     transition: all 0.5s ease;
     padding: 0px;

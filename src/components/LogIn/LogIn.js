@@ -16,18 +16,18 @@ function LogIn({ login, error }) {
   };*/
 
   return (
-    <form>
+    <div>
       <NavBarLogin />
       
         <div className="signin-container">
-          <div className="title-signin">
-            <p>Please enter your username and password</p>
+          <div className="heading-container">
+            <h3 className="heading">Please enter your username and password</h3>
           </div>
         </div>
         <div className="image-input-container">
           <div className="label-password-container">
             <div className="label-user">
-              <label htmlFor="user">Username</label>
+              <label className="label-input" htmlFor="user">Username</label>
               <input
                 className="inputuser"
                 type="text"
@@ -38,9 +38,9 @@ function LogIn({ login, error }) {
               />
             </div>
             <div className="label-password">
-              <label htmlFor="password">Password</label>
+              <label className="label-input" htmlFor="password">Password</label>
               <input
-                className="inputuser"
+              className="inputuser"
                type="password"
                password="password"
                id="password"
@@ -69,7 +69,7 @@ function LogIn({ login, error }) {
           />
           {error != "" ? <div className="error">{error}</div> : ""}
         </div>
-    </form>
+    </div>
   );
 }
 
