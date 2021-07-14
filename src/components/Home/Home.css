@@ -5,17 +5,21 @@
   background-image: url("https://res.cloudinary.com/dnefeccae/image/upload/v1624546542/whenwhyHow/A5fcFPq_cghyfg.jpg"),
     url("https://res.cloudinary.com/dnefeccae/image/upload/v1624546550/whenwhyHow/BJ22PP1_ioyebj.jpg");
   background-repeat: no-repeat;
-  background-position: left, right;
+  background-position:left, right;
   background-size: contain;
-  margin-bottom: -4.4rem;
+  /* height: 120vh; */
 }
 
 .picture {
-  width: 100%;
+  width: 90%;
+  display: block;
+  margin: auto;
 }
 .intro-text {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  width: 700px;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
 }
 .explore-profile {
   display: flex;
@@ -26,7 +30,7 @@
   justify-content: center;
   width: 281px;
   height: 50px;
-  left: 47px;
+  left: 50px;
   top: 337px;
   background: #f1df68;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -57,7 +61,8 @@
   grid-template-columns: repeat(2, auto);
   grid-gap: 35px;
   align-items: center;
-  margin: 10px 10px 70px 10px;
+  margin: 0 10px 0 10px;
+  padding-bottom: 50px;
 }
 
 .icon-home-card {
@@ -73,6 +78,8 @@
   padding: 0 10px 0 10px;
 }
 
+
+/* mobile version? */ 
 @media screen and (max-width: 812px) {
   .container-background {
     background-image: none;
@@ -84,7 +91,10 @@
     width: 100%;
   }
   .intro-text {
-    display: none;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 300px;
   }
 
   .explore-profile {
@@ -94,17 +104,16 @@
   .profile-btn {
     display: flex;
     justify-content: center;
-    width: 281px;
+    align-items: center;
+    width: 280px;
     height: 50px;
-    left: 47px;
-    top: 337px;
     background: #f1df68;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
     border-radius: 30px;
     margin-bottom: 3rem;
-    padding: 10px;
   }
+
   .intro-box {
     width: 146px;
     height: 122px;
@@ -119,16 +128,19 @@
     margin-bottom: 3rem;
   }
 }
-
+/* Desktop Version  */ 
 @media (min-width: 1024px) {
   .home-cards-container {
     grid-template-columns: repeat(4, auto);
     grid-gap: 40px;
     justify-content: center;
+
     /* margin: 20px auto 70px auto; */
   }
 
   .home-card {
-    /* margin: 0 !important; */
+    margin: 0 !important;
   }
+
+
 }
