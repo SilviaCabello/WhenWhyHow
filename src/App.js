@@ -37,7 +37,7 @@ function App() {
       history.push("/balances");
     } else {
       setUser({ user: "", password: "" });
-      setError("details do not match");
+      setError("Wrong username or password");
     }
   };
 
