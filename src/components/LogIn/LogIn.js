@@ -3,11 +3,17 @@ import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import NavBarLogin from "../NavBar/NavBarLogin";
 
-function LogIn({ login, error }) {
+
+function LogIn({ login, error, fetchData }) {
   const [details, setDetails] = useState({ user: "", password: "" });
+  const history = useHistory();
+
+  
   const handleClick = (e) => {
     e.preventDefault();
     login(details);
+    fetchData();
+    history.push("/balances");
   };
 
   /*const submitHandler = (e) => {
@@ -27,38 +33,44 @@ function LogIn({ login, error }) {
         <div className="image-input-container">
           <div className="label-password-container">
             <div className="label-user">
-              <label className="label-input" htmlFor="user">Username</label>
+              <label className="label-input" htmlFor="user">
+                Username
+              </label>
               <input
                 className="inputuser"
                 type="text"
                 username="user"
                 id="user"
-                onChange={(e) => setDetails({ ...details, user: e.target.value })}
+                onChange={(e) =>
+                  setDetails({ ...details, user: e.target.value })
+                }
                 value={details.user}
               />
             </div>
             <div className="label-password">
-              <label className="label-input" htmlFor="password">Password</label>
+              <label className="label-input" htmlFor="password">
+                Password
+              </label>
               <input
-              className="inputuser"
-               type="password"
-               password="password"
-               id="password"
-               onChange={(e) =>
-                setDetails({ ...details, password: e.target.value })
+                className="inputuser"
+                type="password"
+                password="password"
+                id="password"
+                onChange={(e) =>
+                  setDetails({ ...details, password: e.target.value })
                 }
                 value={details.password}
               />
-              </div>
-              <div className="forgotten-psw">
-                <p>Forgot your password?</p>
-              </div>
             </div>
+            <div className="forgotten-psw">
+              <p>Forgot your password?</p>
+            </div>
+          </div>
           <img
             className="calender-img"
             src="https://res.cloudinary.com/dnefeccae/image/upload/v1625045085/whenwhyHow/Group_16_1_y9dbl2.png"
             alt="calendar"
-          /> 
+          />
         </div>
         {error != "" ? <div className="error">{error}</div> : ""}
         <div className="signin">
@@ -71,7 +83,6 @@ function LogIn({ login, error }) {
         </div>
       </div>
     </div>
-      
   );
 }
 

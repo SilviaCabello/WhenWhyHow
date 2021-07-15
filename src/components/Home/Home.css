@@ -37,7 +37,7 @@
   border-radius: 30px;
   border: none;
   padding: 10px;
-  margin-bottom: 3rem;
+  margin: 3rem;
   font-weight: bold;
 }
 .intro-box {
@@ -96,6 +96,7 @@
     text-align: center;
     width: 300px;
   }
+
   .explore-profile {
     display: flex;
     justify-content: center;
@@ -129,7 +130,6 @@
 }
 /* Desktop Version  */ 
 @media (min-width: 1024px) {
-
   .home-cards-container {
     grid-template-columns: repeat(4, auto);
     grid-gap: 40px;
