@@ -52,6 +52,8 @@
     left: 40px;
     top: 281px;
     border: none;
+    background-color: #e6eaef;
+    border-radius: 3px;
   }
 
   .label-user,
@@ -89,7 +91,25 @@
     margin-bottom: 4rem;
     font-weight: bold;
     margin-inline: auto;
+<<<<<<< HEAD
   }
+=======
+  }
+
+
+  .error{
+    text-align: center;
+    background-color:#1f5495;
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    border-radius: 3px;
+  }
+
+>>>>>>> 28b52a6c8a00673d0b1585758058ff822c6552f3
 }
 
 /*-----Mobile-----*/
@@ -98,6 +118,23 @@
     display: none !important;
   }
 
+<<<<<<< HEAD
+=======
+  
+  .login-content {
+    margin-top: 0;
+  }
+
+  .wrapper{
+    margin-bottom: auto;
+  }
+
+  .signin-container {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+>>>>>>> 28b52a6c8a00673d0b1585758058ff822c6552f3
   .signin-container {
     height: 150px;
     top: 65px;
@@ -125,6 +162,7 @@
     height: 30px !important;
     top: 281px;
     border: none;
+    
   }
 
   .forgotten-psw {
@@ -148,7 +186,7 @@
     left: 40px;
   }
 
-  .signin,
+
   .button2 {
     width: 170px;
     height: 50;
@@ -160,6 +198,6 @@
     font-weight: bold;
     font-size: 15px;
     color: #000000;
-    margin-inline: auto;
+    margin: 10px auto auto auto;
   }
 }
