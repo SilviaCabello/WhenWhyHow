@@ -1,8 +1,7 @@
-/*---desktop-----*/ 
+/*---desktop-----*/
 
 @media screen and (min-width: 350px) {
-
-  .login-content{
+  .login-content {
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -15,32 +14,29 @@
     justify-content: space-evenly;
     align-items: center;
   }
-  
+
   .heading-container {
     width: 700px;
     padding-top: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
-    
   }
 
-  .heading{
-    font-weight: 800; 
+  .heading {
+    font-weight: 800;
   }
-
 
   .calender-img {
     width: 300px;
   }
 
-  .image-input-container{
+  .image-input-container {
     display: flex;
     justify-content: center;
   }
 
-  
-  .label-input{
+  .label-input {
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -58,13 +54,12 @@
     border: none;
   }
 
-
   .label-user,
   .label-password {
     height: 120px;
     width: 500px;
     top: 300px;
-    background:none;
+    background: none;
     margin: 20px;
     margin-top: 0px;
   }
@@ -76,16 +71,16 @@
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    color: #1f5495;
+    color: var(--cards-second);
     margin: 30px;
   }
-  
+
   .button2 {
     display: flex;
     justify-content: center;
     width: 280px;
     height: 50px;
-    background: #f1df68;
+    background: var(--btn);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     border: none;
@@ -94,10 +89,7 @@
     margin-bottom: 4rem;
     font-weight: bold;
     margin-inline: auto;
-
   }
-
-  
 }
 
 /*-----Mobile-----*/
@@ -105,8 +97,7 @@
   .calender-img {
     display: none !important;
   }
-  
-  
+
   .signin-container {
     height: 150px;
     top: 65px;
@@ -136,7 +127,6 @@
     border: none;
   }
 
-
   .forgotten-psw {
     width: 300px;
     font-family: Roboto;
@@ -144,7 +134,7 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 14px;
-    color: #1f5495;
+    color: var(--cards-second);
     margin: 35px;
   }
   .inputuser {
@@ -162,7 +152,7 @@
   .button2 {
     width: 170px;
     height: 50;
-    background: #f1df68;
+    background: var(--btn);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     font-family: Roboto;

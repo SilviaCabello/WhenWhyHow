@@ -1,1 +1,9 @@
-
+:root {
+  --main: black;
+  --second: #ecd734;
+  --background: #f4f5f5;
+  --cards: #e6eaef;
+  --cards-second: #01549a;
+  --cards-second-hover: #00437a;
+  --btn: #f1df68;
+}

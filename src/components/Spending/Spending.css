@@ -3,7 +3,7 @@
 }
 .balances-totalcash {
   text-align: center;
-  background-color: #eedf5b;
+  background-color: var(--second);
   height: 50px;
   padding-top: 13px;
 }
