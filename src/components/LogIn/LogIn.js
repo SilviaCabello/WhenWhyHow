@@ -72,6 +72,7 @@ function LogIn({ login, error, fetchData }) {
             alt="calendar"
           />
         </div>
+        {error != "" ? <div className="error">{error}</div> : ""}
         <div className="signin">
           <input
             type="submit"
@@ -79,7 +80,6 @@ function LogIn({ login, error, fetchData }) {
             className="button2"
             onClick={handleClick}
           />
-          {error != "" ? <div className="error">{error}</div> : ""}
         </div>
       </div>
     </div>
