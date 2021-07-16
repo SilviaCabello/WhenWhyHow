@@ -92,18 +92,18 @@
     font-weight: bold;
     margin-inline: auto;
   }
-}
 
-.error {
-  text-align: center;
-  background-color: #1f5495;
-  width: 200px;
-  height: 50px;
-  display: block;
-  margin: auto;
-  color: white;
-  font-weight: bolder;
-  border-radius: 3px;
+  .error {
+    text-align: center;
+    background-color: #1f5495;
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+    border-radius: 3px;
+  }
 }
 
 /*-----Mobile-----*/
