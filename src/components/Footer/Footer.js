@@ -1,5 +1,4 @@
 import "../Footer/Footer.css";
-import { Switch, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
@@ -11,7 +10,11 @@ function Footer() {
         <div className="conection-title">
           <h11>Connect with us</h11>
         </div>
-        <a target="_blank" href="https://www.linkedin.com/company/whenwhyhow//">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/company/whenwhyhow//"
+        >
           <FontAwesomeIcon
             icon={["fab", "linkedin"]}
             className="icons-footer"
@@ -28,7 +31,8 @@ function Footer() {
 
       <div>
         <p className="footer-rights">
-          &copy;{new Date().getFullYear()} WhenWhyHow Corporation | All rights reserved
+          &copy;{new Date().getFullYear()} WhenWhyHow Corporation | All rights
+          reserved
         </p>
       </div>
     </div>
