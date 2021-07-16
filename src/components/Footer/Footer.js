@@ -4,26 +4,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Footer() {
   return (
     <div className="footer-container">
-      <h10 className="title-footer">Contact us | Privacy | Security</h10>
+      <p className="title-footer">Contact us | Privacy | Security</p>
 
       <div className="icons">
         <div className="conection-title">
-          <h11>Connect with us</h11>
+          <p>Connect with us</p>
         </div>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.linkedin.com/company/whenwhyhow//"
-        >
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/whenwhyhow//">
+
           <FontAwesomeIcon
             icon={["fab", "linkedin"]}
             className="icons-footer"
           />
         </a>
         <a
-          target="_blank"
+          target="_blank" rel="noreferrer"
           href="https://twitter.com/whenwhyhow_tech"
-          target="_blank"
         >
           <FontAwesomeIcon icon={["fab", "twitter"]} className="icons-footer" />
         </a>

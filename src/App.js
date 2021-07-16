@@ -15,6 +15,7 @@ library.add(fab, faCheckSquare);
 function App() {
   const [userData, setUserData] = useState({});
   const [user, setUser] = useState({ username: "", password: "" });
+  // eslint-disable-next-line
   const [error, setError] = useState("");
 
   // const [loginStatus, setLoginStatus] = useState("");
@@ -46,6 +47,7 @@ function App() {
       .then(() => {
         history.push("/balances");
       })
+
       .catch((err) => console.log("from catch", err))
 
       .then((data) => setUserData(data[0]));
