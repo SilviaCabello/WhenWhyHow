@@ -49,8 +49,7 @@ function App() {
       .then(() => {
         history.push("/balances")
       })
-      .catch((err) => console.log("from catch" , err));
-
+      .catch((err) => console.log("from catch" , err))
       .then((data) => setUserData(data[0]));
 
 
