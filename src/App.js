@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
@@ -15,9 +15,10 @@ library.add(fab, faCheckSquare);
 function App() {
   const [userData, setUserData] = useState({});
   const [user, setUser] = useState({ username: "", password: "" });
+  // eslint-disable-next-line
   const [error, setError] = useState("");
 
-  const [loginStatus, setLoginStatus] = useState("");
+  // const [loginStatus, setLoginStatus] = useState("");
 
   const history = useHistory();
 
@@ -26,10 +27,10 @@ function App() {
   //   password: req.body.password,
   // };
 
-  const adminUser = {
-    user: "",
-    password: "",
-  };
+  // const adminUser = {
+  //   user: "",
+  //   password: "",
+  // };
 
   const fetchData = () => {
     fetch("/auth/login", {
@@ -40,20 +41,17 @@ function App() {
       .then((res) => res.json())
 
       .then((data) => {
-        console.log(data)
+        console.log(data);
         setUserData(data[0]);
       })
       .then(() => {
-        history.push("/balances")
+        history.push("/balances");
       })
-      .catch((err) => console.log("from catch" , err));
 
-      .then((data) => {
-        setUserData(data[0])
+      .catch((err) => console.log("from catch", err))
 
-
-  });
-
+      .then((data) => setUserData(data[0]));
+  };
 
   // const login = () => {
   //   if (res.json) {

@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
 .root {
+=======
+:root {
+>>>>>>> b392f331b80ad4e113e5429ece63a7d77753b24e
   --main: black;
   --second: #ecd734;
   --background: #f4f5f5;
@@ -8,6 +12,12 @@
   --cards-second-hover: #00437a;
   --btn: #f1df68;
 }
+<<<<<<< HEAD
  .root{
     font-family: 'Roboto', sans-serif;
+=======
+
+* {
+font-family: 'Roboto', sans-serif;
+>>>>>>> b392f331b80ad4e113e5429ece63a7d77753b24e
 }

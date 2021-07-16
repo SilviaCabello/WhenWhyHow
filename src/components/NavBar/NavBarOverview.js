@@ -15,12 +15,6 @@ const NavBarOverview = () => {
         },
     
         {
-            title: "Overview",
-            url: "/balances",
-            cName: "nav-links",
-        },
-    
-        {
             title: "Logout",
             url: "/",
             cName: "nav-links",
@@ -34,7 +28,7 @@ const NavBarOverview = () => {
             <nav className="navbar-items">
 				<div className="logo-container">
 				<a href="/">
-					<img src="https://i.postimg.cc/ZRWV5ftX/LOGO.png" className="logo" />
+					<img src="https://i.postimg.cc/ZRWV5ftX/LOGO.png" alt="" className="logo" />
 				</a>
 				</div>
 				<div className="menu-icon" onClick={showHide}>
