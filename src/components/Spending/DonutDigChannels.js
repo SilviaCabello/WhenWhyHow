@@ -30,8 +30,10 @@ function DonutDigChannel() {
             innerRadius={0.5}
             colors={[
               "#e9dc79",
+              "#e9dc89",
               "#eede5b",
               "#ecd734",
+              "#ecc734",
               "#bba714",
               "#9c8b04",
               "#948b44",
