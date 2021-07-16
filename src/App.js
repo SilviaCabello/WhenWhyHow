@@ -21,18 +21,15 @@ function App() {
 
   const history = useHistory();
 
-
   // const adminUser = {
   //   username: req.body.username,
   //   password: req.body.password,
   // };
 
-
   const adminUser = {
     user: "",
     password: "",
   };
-
 
   const fetchData = () => {
     fetch("/auth/login", {
@@ -43,17 +40,15 @@ function App() {
       .then((res) => res.json())
 
       .then((data) => {
-        console.log(data)
+        console.log(data);
         setUserData(data[0]);
       })
       .then(() => {
-        history.push("/balances")
+        history.push("/balances");
       })
-      .catch((err) => console.log("from catch" , err));
+      .catch((err) => console.log("from catch", err))
 
       .then((data) => setUserData(data[0]));
-
-
   };
 
   // const login = () => {
