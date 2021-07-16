@@ -14,11 +14,6 @@ const NavBarLogin = () => {
             cName: "nav-links",
         },
     
-        {
-            title: "Overview",
-            url: "/balances",
-            cName: "nav-links",
-        },
     ]; 
 
     const [menuList, setMenuList] = useState(false);
@@ -28,7 +23,7 @@ const NavBarLogin = () => {
             <nav className="navbar-items">
 				<div className="logo-container">
 				<a href="/">
-					<img src="https://i.postimg.cc/ZRWV5ftX/LOGO.png" className="logo" />
+					<img src="https://i.postimg.cc/ZRWV5ftX/LOGO.png" alt="" className="logo" />
 				</a>
 				</div>
 				<div className="menu-icon" onClick={showHide}>
