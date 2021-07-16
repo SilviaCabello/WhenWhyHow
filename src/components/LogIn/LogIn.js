@@ -1,21 +1,21 @@
 import "./LogIn.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import NavBarLogin from "../NavBar/NavBarLogin";
 
-
-function LogIn({ login, error, fetchData }) {
-  const [details, setDetails] = useState({ user: "", password: "" });
+function LogIn({ login, error, fetchData, userData }) {
+  const [details, setDetails] = useState({ username: "", password: "" });
+  const [count, setCount] = useState(0);
   const history = useHistory();
 
-  
   const handleClick = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     login(details);
-    fetchData();
-    history.push("/balances");
+    setCount(count + 1);
+    // fetchData();
   };
 
+  useEffect(fetchData, [count]);
   /*const submitHandler = (e) => {
     e.preventDefault();
     login(details);
@@ -42,7 +42,7 @@ function LogIn({ login, error, fetchData }) {
                 username="user"
                 id="user"
                 onChange={(e) =>
-                  setDetails({ ...details, user: e.target.value })
+                  setDetails({ ...details, username: e.target.value })
                 }
                 value={details.user}
               />

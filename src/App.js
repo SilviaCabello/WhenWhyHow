@@ -14,15 +14,17 @@ import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 library.add(fab, faCheckSquare);
 function App() {
   const [userData, setUserData] = useState({});
-  const [user, setUser] = useState({ user: "", password: "" });
+  const [user, setUser] = useState({ username: "", password: "" });
   const [error, setError] = useState("");
+
+  const [loginStatus, setLoginStatus] = useState("");
 
   const history = useHistory();
 
-  const adminUser = {
-    user: "",
-    password: "",
-  };
+  // const adminUser = {
+  //   username: req.body.username,
+  //   password: req.body.password,
+  // };
 
   const fetchData = () => {
     fetch("/auth/login", {
@@ -31,21 +33,64 @@ function App() {
       body: JSON.stringify(user),
     })
       .then((res) => res.json())
-      .then((data) => setUserData(data[0]));
+      .then((data) => {
+        console.log(data)
+        setUserData(data[0]);
+      })
+      .then(() => {
+        history.push("/balances")
+      })
+      .catch((err) => console.log("from catch" , err));
   };
 
+  // const login = () => {
+  //   if (res.json) {
+  //     setUserData(response.data.message);
+  //   } else {
+  //     setUserData(response.data[0].username);
+  //   }
+  // };
 
-  const Logout = () => {
-    setUser({});
-  };
+  // useEffect(() => {
+  //   if (response.data.login == "true") {
+  //     setLoginStatus(response.data.user[0].username);
+  //   }
+  // });
+
+  // const login = (details) => {
+  //   console.log(details);
+  //   if (
+  //     details.user === adminUser.user &&
+  //     details.password === adminUser.password
+  //   ) {
+  //     console.log("logged in");
+  //     setUser({
+  //       user: details.user,
+  //       password: details.password,
+  //     });
+  //     setError("");
+  //   } else {
+  //     setUser({ user: "", password: "" });
+  //     setError("details do not match");
+  //   }
+  // };
+
+  // const Logout = () => {
+  //   setUser({});
+  // };
   return (
     <div className="App">
       <Switch>
         <Route path="/login">
-          <LogIn fetchData={fetchData} login={setUser} error={error} />
+          <LogIn
+            fetchData={fetchData}
+            userData={userData}
+            login={setUser}
+            error={error}
+          />
         </Route>
         <Route path="/balances">
-          <Balances adminUser={adminUser} />
+          <Balances adminUser={userData} />
         </Route>
         <Route path="/spendings">
           <Spending />
