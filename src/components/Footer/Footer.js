@@ -11,6 +11,7 @@ function Footer() {
           <p>Connect with us</p>
         </div>
         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/whenwhyhow//">
+
           <FontAwesomeIcon
             icon={["fab", "linkedin"]}
             className="icons-footer"
@@ -26,7 +27,8 @@ function Footer() {
 
       <div>
         <p className="footer-rights">
-          &copy;{new Date().getFullYear()} WhenWhyHow Corporation | All rights reserved
+          &copy;{new Date().getFullYear()} WhenWhyHow Corporation | All rights
+          reserved
         </p>
       </div>
     </div>

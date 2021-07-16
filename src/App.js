@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
@@ -17,22 +17,19 @@ function App() {
   const [user, setUser] = useState({ username: "", password: "" });
   const [error, setError] = useState("");
 
-  const [loginStatus, setLoginStatus] = useState("");
+  // const [loginStatus, setLoginStatus] = useState("");
 
   const history = useHistory();
-
 
   // const adminUser = {
   //   username: req.body.username,
   //   password: req.body.password,
   // };
 
-
-  const adminUser = {
-    user: "",
-    password: "",
-  };
-
+  // const adminUser = {
+  //   user: "",
+  //   password: "",
+  // };
 
   const fetchData = () => {
     fetch("/auth/login", {
@@ -43,16 +40,16 @@ function App() {
       .then((res) => res.json())
 
       .then((data) => {
-        console.log(data)
+        console.log(data);
         setUserData(data[0]);
       })
       .then(() => {
-        history.push("/balances")
+        history.push("/balances");
       })
+
       .catch((err) => console.log("from catch" , err))
+
       .then((data) => setUserData(data[0]));
-
-
   };
 
   // const login = () => {
