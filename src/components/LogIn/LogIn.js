@@ -1,12 +1,11 @@
 import "./LogIn.css";
 import { useState, useEffect } from "react";
-import { Link, useHistory } from "react-router-dom";
+
 import NavBarLogin from "../NavBar/NavBarLogin";
 
 function LogIn({ login, error, fetchData, userData }) {
   const [details, setDetails] = useState({ username: "", password: "" });
   const [count, setCount] = useState(0);
-  const history = useHistory();
 
   const handleClick = (e) => {
     // e.preventDefault();
@@ -72,7 +71,7 @@ function LogIn({ login, error, fetchData, userData }) {
             alt="calendar"
           />
         </div>
-        {error != "" ? <div className="error">{error}</div> : ""}
+        {error !== "" ? <div className="error">{error}</div> : ""}
         <div className="signin">
           <input
             type="submit"
