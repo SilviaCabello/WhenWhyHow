@@ -9,7 +9,7 @@
   }
 
   .navbar-items {
-    background: black;
+    background: var(--main);
     height: 10vh;
     width: 100%;
   }
@@ -42,22 +42,21 @@
   .NavBar-li {
     background: none;
     color: white;
-    font-weight: 600; 
+    font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    padding-top: 20px;  
-    padding: 20px; 
+    padding-top: 20px;
+    padding: 20px;
   }
 
   .nav-links:hover {
-    background-color: #ecd734;
+    background-color: var(--second);
   }
 
   .nav-links:hover,
   .active {
     color: black !important;
   }
-
 
   .menu-list {
     background: none;
@@ -84,13 +83,10 @@
     font-size: 5rem;
     border-radius: 3px;
   }
-
 }
 
-
 /* Tablets */
-@media screen and (max-width:960px) {
-
+@media screen and (max-width: 960px) {
   .logo {
     display: flex;
     width: 3rem;
@@ -100,7 +96,7 @@
   }
 
   .navbar-items {
-    background: black;
+    background: var(--main);
     display: inline-flex;
     align-items: center;
     height: 9vh;
@@ -111,7 +107,7 @@
     background: transparent;
     display: flex;
     list-style: none;
-    margin-bottom: 1rem,
+    margin-bottom: 1rem;
   }
 
   .menu-list {
@@ -137,11 +133,11 @@
   .NavBar-li {
     background: none;
     color: white;
-    font-weight: 600; 
+    font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    padding-top: 30px;  
-    padding: 40px; 
+    padding-top: 30px;
+    padding: 40px;
   }
 
   .menu-list {
@@ -163,10 +159,7 @@
     margin-left: 20px;
     margin-top: 20px;
   }
-
 }
-
-
 
 /* Mobile Version */
 
@@ -183,14 +176,14 @@
   }
 
   .navbar-items {
-    background: black;
+    background: var(--main);
     height: 11vh;
     text-decoration: none;
   }
 
   a {
     text-decoration: none;
-    background: black;
+    background: var(--main);
     padding: 0px;
     margin: 0px;
   }
@@ -208,7 +201,7 @@
   }
 
   .nav-menu.active {
-    background: black;
+    background: var(--main);
     left: 0;
     opacity: 1;
     transition: all 0.9s ease-out;
@@ -221,7 +214,7 @@
     background: black;
     font-size: 1rem;
     letter-spacing: 3px;
-    color: #eede5b;
+    color: var(--second);
     font-weight: 500;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -240,7 +233,7 @@
   .menu-icon {
     text-decoration: none;
     background: none;
-    color: #eede5b;
+    color: var(--btn);
     display: flex;
     position: absolute;
     top: 0px;
