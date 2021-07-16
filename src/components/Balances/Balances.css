@@ -1,8 +1,7 @@
 .welcome-balances {
   text-align: center;
-  font-weight:800;
+  font-weight: 800;
   margin-top: 20px;
-  
 }
 
 div.card-balances.card {
@@ -19,7 +18,7 @@ div.card-balances.card {
 
 .balances-totalcash {
   text-align: center;
-  background-color: #eedf5b;
+  background-color: var(--second);
   height: 50px;
   padding-top: 13px;
   margin: auto;
@@ -29,7 +28,6 @@ div.card-balances.card {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
-  
 }
 
 .toggle-MainBank-balances {
@@ -58,7 +56,6 @@ div.card-balances.card {
   padding: 0;
 }
 
-
 .card-balances {
   position: static !important;
 }
@@ -70,7 +67,7 @@ div.card-balances.card {
 .spendings-card {
   height: 100px;
   width: 100px;
-  background-color: #01549a;
+  background-color: var(--cards-second);
   border-radius: 5px;
   box-shadow: 1px 1px 7px 1px #898989;
   margin-top: 30px;
@@ -87,22 +84,21 @@ div.card-balances.card {
 .digital-card {
   height: 100px;
   width: 100px;
-  background-color: #01549a;
+  background-color: var(--cards-second);
   border-radius: 5px;
   box-shadow: 1px 1px 7px 1px #898989;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.spendings-card:hover{
+.spendings-card:hover {
   box-shadow: 4px 4px 15px 2px #898989;
-  background-color: #00437a;
+  background-color: var(--cards-second-hover);
 }
-.digital-card:hover{
+.digital-card:hover {
   box-shadow: 4px 4px 15px 2px #898989;
-  background-color: #00437a;
+  background-color: var(--cards-second-hover);
 }
-
 
 .card-title {
   color: rgb(255, 255, 255);
@@ -153,7 +149,8 @@ div.card-balances.card {
   }
 
   .balances {
-    background-image: url("https://i.imgur.com/A5fcFPq.jpg"), url("https://i.imgur.com/BJ22PP1.jpg");
+    background-image: url("https://i.imgur.com/A5fcFPq.jpg"),
+      url("https://i.imgur.com/BJ22PP1.jpg");
     background-repeat: no-repeat;
     background-position: left, right;
     background-size: contain;

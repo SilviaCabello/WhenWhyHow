@@ -5,7 +5,7 @@
   background-image: url("https://res.cloudinary.com/dnefeccae/image/upload/v1624546542/whenwhyHow/A5fcFPq_cghyfg.jpg"),
     url("https://res.cloudinary.com/dnefeccae/image/upload/v1624546550/whenwhyHow/BJ22PP1_ioyebj.jpg");
   background-repeat: no-repeat;
-  background-position:left, right;
+  background-position: left, right;
   background-size: contain;
   /* height: 120vh; */
 }
@@ -32,7 +32,7 @@
   height: 50px;
   left: 50px;
   top: 337px;
-  background: #f1df68;
+  background: var(--btn);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   border: none;
@@ -43,7 +43,7 @@
 .intro-box {
   width: 146px;
   height: 122px;
-  background: #f1f1f1;
+  background: var(--background);
   border-radius: 5px;
   margin: 10px;
 }
@@ -51,7 +51,7 @@
 .home-card {
   height: 130px;
   width: 150px;
-  background-color: #e6eaef;
+  background-color: var(--cards);
   border-radius: 5px;
   margin: auto;
 }
@@ -78,8 +78,7 @@
   padding: 0 10px 0 10px;
 }
 
-
-/* mobile version? */ 
+/* mobile version? */
 @media screen and (max-width: 812px) {
   .container-background {
     background-image: none;
@@ -107,7 +106,7 @@
     align-items: center;
     width: 280px;
     height: 50px;
-    background: #f1df68;
+    background: var(--btn);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
     border-radius: 30px;
@@ -117,7 +116,7 @@
   .intro-box {
     width: 146px;
     height: 122px;
-    background: #f1f1f1;
+    background: var(--background);
     border-radius: 5px;
     margin: 10px;
   }
@@ -128,7 +127,7 @@
     margin-bottom: 3rem;
   }
 }
-/* Desktop Version  */ 
+/* Desktop Version  */
 @media (min-width: 1024px) {
   .home-cards-container {
     grid-template-columns: repeat(4, auto);
@@ -141,6 +140,4 @@
   .home-card {
     margin: 0 !important;
   }
-
-
 }
