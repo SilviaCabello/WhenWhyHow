@@ -21,10 +21,18 @@ function App() {
 
   const history = useHistory();
 
+
   // const adminUser = {
   //   username: req.body.username,
   //   password: req.body.password,
   // };
+
+
+  const adminUser = {
+    user: "",
+    password: "",
+  };
+
 
   const fetchData = () => {
     fetch("/auth/login", {
@@ -33,6 +41,7 @@ function App() {
       body: JSON.stringify(user),
     })
       .then((res) => res.json())
+
       .then((data) => {
         console.log(data)
         setUserData(data[0]);
@@ -41,6 +50,10 @@ function App() {
         history.push("/balances")
       })
       .catch((err) => console.log("from catch" , err));
+
+      .then((data) => setUserData(data[0]));
+
+
   };
 
   // const login = () => {
