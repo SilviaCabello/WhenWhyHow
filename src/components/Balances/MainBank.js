@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./Balances.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Accordion, Card, Button } from "react-bootstrap";
