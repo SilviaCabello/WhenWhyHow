@@ -40,16 +40,20 @@ function App() {
       .then((res) => res.json())
 
       .then((data) => {
-        console.log(data);
+        console.log(data)
         setUserData(data[0]);
       })
       .then(() => {
-        history.push("/balances");
+        history.push("/balances")
       })
-      .catch((err) => console.log("from catch", err))
+      .catch((err) => console.log("from catch" , err));
 
-      .then((data) => setUserData(data[0]));
-  };
+      .then((data) => {
+        setUserData(data[0])
+
+
+  });
+
 
   // const login = () => {
   //   if (res.json) {
@@ -65,23 +69,23 @@ function App() {
   //   }
   // });
 
-  // const login = (details) => {
-  //   console.log(details);
-  //   if (
-  //     details.user === adminUser.user &&
-  //     details.password === adminUser.password
-  //   ) {
-  //     console.log("logged in");
-  //     setUser({
-  //       user: details.user,
-  //       password: details.password,
-  //     });
-  //     setError("");
-  //   } else {
-  //     setUser({ user: "", password: "" });
-  //     setError("details do not match");
-  //   }
-  // };
+  const login = (details) => {
+    console.log(details);
+    if (
+      //     details.user === adminUser.user &&
+      details.password === adminUser.password
+    ) {
+      console.log("logged in");
+      setUser({
+        user: details.user,
+        password: details.password,
+      });
+      setError("");
+    } else {
+      setUser({ user: "", password: "" });
+      setError("details do not match");
+    }
+  };
 
   // const Logout = () => {
   //   setUser({});
