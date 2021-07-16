@@ -37,7 +37,7 @@
   border-radius: 30px;
   border: none;
   padding: 10px;
-  margin-bottom: 3rem;
+  margin: 3rem;
   font-weight: bold;
 }
 .intro-box {
@@ -95,6 +95,7 @@
     text-align: center;
     width: 300px;
   }
+
   .explore-profile {
     display: flex;
     justify-content: center;
