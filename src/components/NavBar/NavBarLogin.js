@@ -14,11 +14,6 @@ const NavBarLogin = () => {
             cName: "nav-links",
         },
     
-        {
-            title: "Overview",
-            url: "/balances",
-            cName: "nav-links",
-        },
     ]; 
 
     const [menuList, setMenuList] = useState(false);

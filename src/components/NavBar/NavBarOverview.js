@@ -15,12 +15,6 @@ const NavBarOverview = () => {
         },
     
         {
-            title: "Overview",
-            url: "/balances",
-            cName: "nav-links",
-        },
-    
-        {
             title: "Logout",
             url: "/",
             cName: "nav-links",
