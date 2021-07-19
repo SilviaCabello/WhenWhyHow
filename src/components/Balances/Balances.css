@@ -24,10 +24,12 @@ div.card-balances.card {
   margin: auto;
 }
 
-.balances-categories {
+.balances-categories-balances {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
+  justify-content: center;
+
 }
 
 .toggle-MainBank-balances {
@@ -113,11 +115,11 @@ div.card-balances.card {
   margin-top: 7px;
 }
 
-.card-icon-balances {
+.card-icon-balances-img {
   width: 40px !important;
   height: 40px !important;
   display: block !important;
-  margin: 20px auto auto 27px !important;
+  margin: auto;
 }
 
 .card-icon-balances-habits {
@@ -148,13 +150,13 @@ div.card-balances.card {
     text-align: center !important;
   }
 
-  .balances {
+  /* .balances {
     background-image: url("https://i.imgur.com/A5fcFPq.jpg"),
       url("https://i.imgur.com/BJ22PP1.jpg");
     background-repeat: no-repeat;
     background-position: left, right;
     background-size: contain;
-  }
+  } */
 
   .MainBank-Records {
     text-align: left;
