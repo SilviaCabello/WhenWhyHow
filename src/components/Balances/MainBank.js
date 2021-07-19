@@ -1,6 +1,7 @@
 import "./Balances.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Accordion, Card, Button } from "react-bootstrap";
+import Table from "./Table";
 
 export default function MainBank() {
   return (
@@ -19,19 +20,7 @@ export default function MainBank() {
           </Card.Header>
           <Accordion.Collapse eventKey="0">
             <Card.Body>
-              <ul className="MainBank-Records">
-                <li>
-                  Pie Me Restaurant Bonn &nbsp; 32,98€ &nbsp;  09.05.21 
-                </li>
-                <br></br>
-                <li>
-                  Rewe Supermarkt Bonn &nbsp; 47,99€ &nbsp; 09.05.21
-                </li>
-                <br></br>
-                <li>
-                  Ernst Kaffeeröster Köln &nbsp; 18,96€ &nbsp; 09.05.21
-                </li>
-              </ul>
+              <Table/>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -47,7 +36,9 @@ export default function MainBank() {
             </Accordion.Toggle>
           </Card.Header>
           <Accordion.Collapse eventKey="1">
-            <Card.Body>Records</Card.Body>
+            <Card.Body>
+                <Table/>
+            </Card.Body>
           </Accordion.Collapse>
         </Card>
         <Card className="card-balances">
@@ -62,7 +53,9 @@ export default function MainBank() {
             </Accordion.Toggle>
           </Card.Header>
           <Accordion.Collapse eventKey="2">
-            <Card.Body>Records</Card.Body>
+            <Card.Body>
+              <Table/>
+            </Card.Body>
           </Accordion.Collapse>
         </Card>
       </Accordion>
