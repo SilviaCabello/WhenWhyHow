@@ -16,7 +16,6 @@ const Table = () => {
   const {
     getTableProps,
     getTableBodyProps,
-    headerGroups,
     rows,
     prepareRow,
   } = tableInstance;
