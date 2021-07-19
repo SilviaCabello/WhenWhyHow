@@ -15,7 +15,7 @@ library.add(fab, faCheckSquare);
 function App() {
   const [userData, setUserData] = useState({});
   const [user, setUser] = useState({ username: "", password: "" });
-  // eslint-disable-next-line
+  //eslint-disable-next-line
   const [error, setError] = useState("");
 
   // const [loginStatus, setLoginStatus] = useState("");
@@ -29,29 +29,28 @@ function App() {
 
   // const adminUser = {
   //   user: "",
-  //   password: "",
+  //   password: "12345",
   // };
 
   const fetchData = () => {
-    fetch("/auth/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(user),
-    })
+    if (user.username !== "") {
+      
+      fetch("/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(user),
+      })
       .then((res) => res.json())
-
       .then((data) => {
-        console.log(data);
         setUserData(data[0]);
       })
       .then(() => {
-        history.push("/balances");
-      })
-
+          history.push("/balances");
+        })
       .catch((err) => console.log("from catch", err))
-
-      .then((data) => setUserData(data[0]));
-  };
+        
+      };
+    }
 
   // const login = () => {
   //   if (res.json) {
@@ -70,7 +69,7 @@ function App() {
   // const login = (details) => {
   //   console.log(details);
   //   if (
-  //     details.user === adminUser.user &&
+  //     //     details.user === adminUser.user &&
   //     details.password === adminUser.password
   //   ) {
   //     console.log("logged in");
