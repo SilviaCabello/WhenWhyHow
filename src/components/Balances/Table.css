@@ -4,7 +4,7 @@ table {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 100%;
   font-weight: light;
-  font-size: 13px;
+  font-size: 11px;
   text-align: left;
 }
 
@@ -27,4 +27,13 @@ table th {
   text-align: left;
   background-color: #04aa6d;
   color: white;
+}
+
+
+/*---------- Desktop Version ----------*/
+
+@media (min-width: 1024px) {
+    table {
+        font-size: 13px;
+    }
 }
