@@ -23,7 +23,7 @@ const Table = () => {
 
   return (
     <table {...getTableProps()}>
-      <thead>
+      {/* <thead>
         {headerGroups.map((headerGroup) => (
           <tr {...headerGroup.getHeaderGroupProps()}>
             {headerGroup.headers.map((column) => (
@@ -31,7 +31,7 @@ const Table = () => {
             ))}
           </tr>
         ))}
-      </thead>
+      </thead> */}
 
       <tbody {...getTableBodyProps()}>
         {rows.map((row) => {

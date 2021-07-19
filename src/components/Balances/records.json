@@ -1,37 +1,37 @@
 [
     {
         "id":1,
-        "record":"Supermarket",
+        "record":" Rewe Supermarket Auerstrasse",
         "import":"19,98€",
         "date":"24.06.2021"
     },
     {
         "id":2,
-        "record":"Restaurant",
+        "record":"Greenfinch Restaurant",
         "import":"53,85€",
         "date":"24.06.2021"
     },
     {
         "id":3,
-        "record":"Cinema",
+        "record":"Filmtheater am Friedrichshain",
         "import":"30,90€",
         "date":"26.06.2021"
     },
     {
         "id":4,
-        "record":"Supermarket",
+        "record":"Rewe Supermarket Auerstrasse",
         "import":"45,99€",
         "date":"28.06.2021"
     },
     {
         "id":5,
-        "record":"Clothing",
-        "import":"35,00€",
+        "record":"Kleiner Schritte Schue",
+        "import":"59,00€",
         "date":"28.06.2021"
     },
     {
         "id":6,
-        "record":"Supermarket",
+        "record":"Denns BioMarkt Greifswalder Str.",
         "import":"27,99€",
         "date":"29.06.2021"
     }

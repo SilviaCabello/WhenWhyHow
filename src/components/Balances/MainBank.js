@@ -21,26 +21,6 @@ export default function MainBank() {
           <Accordion.Collapse eventKey="0">
             <Card.Body>
               <Table/>
-              <ul className="MainBank-Records">
-                <li>
-                  Pie Me Restaurant Bonn &nbsp; <b>32,98€</b> &nbsp;  09.05.21 
-                </li>
-                <li>
-                  Rewe Supermarkt Bonn &nbsp; <b>47,99€</b> &nbsp; 09.05.21
-                </li>
-                <li>
-                  Ernst Kaffeeröster Köln &nbsp; <b>18,96€</b> &nbsp; 09.05.21
-                </li>
-                <li>
-                  Ernst Kaffeeröster Köln &nbsp; <b>18,96€</b> &nbsp; 09.05.21
-                </li>
-                <li>
-                  Ernst Kaffeeröster Köln &nbsp; <b>18,96€</b> &nbsp; 09.05.21
-                </li>
-                <li>
-                  Ernst Kaffeeröster Köln &nbsp; <b>18,96€</b> &nbsp; 09.05.21
-                </li>
-              </ul>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -56,7 +36,9 @@ export default function MainBank() {
             </Accordion.Toggle>
           </Card.Header>
           <Accordion.Collapse eventKey="1">
-            <Card.Body>Records</Card.Body>
+            <Card.Body>
+                <Table/>
+            </Card.Body>
           </Accordion.Collapse>
         </Card>
         <Card className="card-balances">
@@ -71,7 +53,9 @@ export default function MainBank() {
             </Accordion.Toggle>
           </Card.Header>
           <Accordion.Collapse eventKey="2">
-            <Card.Body>Records</Card.Body>
+            <Card.Body>
+              <Table/>
+            </Card.Body>
           </Accordion.Collapse>
         </Card>
       </Accordion>
