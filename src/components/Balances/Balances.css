@@ -29,7 +29,6 @@ div.card-balances.card {
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
   justify-content: center;
-
 }
 
 .toggle-MainBank-balances {
@@ -118,8 +117,7 @@ div.card-balances.card {
 .card-icon-balances-img {
   width: 40px !important;
   height: 40px !important;
-  display: block !important;
-  margin: auto;
+  margin: 20px auto auto 30px;
 }
 
 .card-icon-balances-habits {
