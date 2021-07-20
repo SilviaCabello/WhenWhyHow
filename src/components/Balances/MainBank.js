@@ -3,7 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Accordion, Card, Button } from "react-bootstrap";
 import Table from "./Table";
 
-export default function MainBank() {
+export default function MainBank({ userData }) {
+  console.log(userData);
   return (
     <div className="accordionContainer">
       <Accordion className="Acordion-Balances">
@@ -20,7 +21,7 @@ export default function MainBank() {
           </Card.Header>
           <Accordion.Collapse eventKey="0">
             <Card.Body>
-              <Table/>
+              <Table userData={userData} />
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -37,7 +38,7 @@ export default function MainBank() {
           </Card.Header>
           <Accordion.Collapse eventKey="1">
             <Card.Body>
-                <Table/>
+              <Table />
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -54,7 +55,7 @@ export default function MainBank() {
           </Card.Header>
           <Accordion.Collapse eventKey="2">
             <Card.Body>
-              <Table/>
+              <Table />
             </Card.Body>
           </Accordion.Collapse>
         </Card>

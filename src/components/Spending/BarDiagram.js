@@ -9,36 +9,36 @@ import {
   PolarRadiusAxis,
 } from "recharts";
 
-const data = [
-  {
-    subject: "Christmas Season",
-    A: 34,
-    fullMark: 35,
-  },
-  {
-    subject: "Other Banks",
-    A: 21,
-    fullMark: 35,
-  },
-  {
-    subject: "Stock Market Crashes",
-    A: 7,
-    fullMark: 35,
-  },
+export default function BarDiagram({ userData }) {
+  const data = [
+    {
+      subject: userData.spider[0].subject,
+      A: userData.spider[0].a,
+      fullMark: userData.spider[0].fullMark,
+    },
+    {
+      subject: userData.spider[1].subject,
+      A: userData.spider[1].a,
+      fullMark: userData.spider[1].fullMark,
+    },
+    {
+      subject: userData.spider[2].subject,
+      A: userData.spider[2].a,
+      fullMark: userData.spider[2].fullMark,
+    },
 
-  {
-    subject: "Bank Own Campaings",
-    A: 16,
-    fullMark: 35,
-  },
-  {
-    subject: "Economic News",
-    A: 3,
-    fullMark: 35,
-  },
-];
+    {
+      subject: userData.spider[3].subject,
+      A: userData.spider[3].a,
+      fullMark: userData.spider[3].fullMark,
+    },
+    {
+      subject: userData.spider[4].subject,
+      A: userData.spider[4].a,
+      fullMark: userData.spider[4].fullMark,
+    },
+  ];
 
-export default function BarDiagram() {
   return (
     <div className="card-container">
       <div className="spending-card">

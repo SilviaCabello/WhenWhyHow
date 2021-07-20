@@ -1,7 +1,7 @@
 import DonutChart from "react-donut-chart";
 import "./DonutChart.css";
 
-function Donut() {
+function Donut({ userData }) {
   return (
     <div className="card-container">
       <div className="spending-card">
@@ -10,29 +10,29 @@ function Donut() {
           <DonutChart
             data={[
               {
-                label: "Travels",
-                value: 353.32,
+                label: userData.spendings[0].label,
+                value: userData.spendings[0].value,
               },
               {
-                label: "Groceries",
-                value: 412.45,
+                label: userData.spendings[1].label,
+                value: userData.spendings[1].value,
               },
 
               {
-                label: "Insurance",
-                value: 202.32,
+                label: userData.spendings[2].label,
+                value: userData.spendings[2].value,
               },
               {
-                label: "Home",
-                value: 202.32,
+                label: userData.spendings[3].label,
+                value: userData.spendings[3].value,
               },
               {
-                label: "Rent",
-                value: 800.55,
+                label: userData.spendings[4].label,
+                value: userData.spendings[4].value,
               },
               {
-                label: "Kids",
-                value: 602.34,
+                label: userData.spendings[5].label,
+                value: userData.spendings[5].value,
               },
             ]}
             innerRadius={0.5}

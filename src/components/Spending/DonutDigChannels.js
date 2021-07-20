@@ -1,7 +1,7 @@
 import DonutChart from "react-donut-chart";
 import "./DonutChart.css";
 
-function DonutDigChannel() {
+function DonutDigChannel({ userData }) {
   return (
     <div className="card-container">
       <div className="spending-card">
@@ -10,21 +10,21 @@ function DonutDigChannel() {
           <DonutChart
             data={[
               {
-                label: "App",
-                value: 57,
+                label: userData.digital[0].label,
+                value: userData.digital[0].value,
               },
               {
-                label: "Web",
-                value: 21,
+                label: userData.digital[1].label,
+                value: userData.digital[1].value,
               },
 
               {
-                label: "Chatbot",
-                value: 18,
+                label: userData.digital[2].label,
+                value: userData.digital[2].value,
               },
               {
-                label: "Call Center",
-                value: 4,
+                label: userData.digital[3].label,
+                value: userData.digital[3].value,
               },
             ]}
             innerRadius={0.5}

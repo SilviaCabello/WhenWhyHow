@@ -3,8 +3,8 @@ import MainBank from "./MainBank";
 import NavigationCards from "./NavigationCards.js";
 import NavBarOverview from "../NavBar/NavBarOverview";
 
-
-function Balances({ adminUser }) {
+function Balances({ adminUser, userData }) {
+  console.log(userData)
   return (
     <div className="Welcome">
       <NavBarOverview />
@@ -17,9 +17,9 @@ function Balances({ adminUser }) {
         alt=""
       />
       <p className="balances-totalcash">
-        Available Cash <b>5388,23€</b>
+        Available Cash <b>{userData.balance}</b>
       </p>
-      <MainBank />
+      <MainBank userData={userData} />
       <NavigationCards />
     </div>
   );

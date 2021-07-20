@@ -4,10 +4,10 @@ import records from "./records.json";
 import { COLUMNS } from "./columns";
 import "./Table.css";
 
-const Table = () => {
+const Table = ({userData}) => {
   const columns = useMemo(() => COLUMNS, []);
   const data = useMemo(() => records, []);
-
+  console.log(records);
   const tableInstance = useTable({
     columns,
     data,
