@@ -34,23 +34,21 @@ function App() {
 
   const fetchData = () => {
     if (user.username !== "") {
-      
       fetch("/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
       })
-      .then((res) => res.json())
-      .then((data) => {
-        setUserData(data[0]);
-      })
-      .then(() => {
+        .then((res) => res.json())
+        .then((data) => {
+          setUserData(data[0]);
+        })
+        .then(() => {
           history.push("/balances");
         })
-      .catch((err) => console.log("from catch", err))
-        
-      };
+        .catch((err) => console.log("from catch", err));
     }
+  };
 
   // const login = () => {
   //   if (res.json) {
@@ -99,13 +97,13 @@ function App() {
           />
         </Route>
         <Route path="/balances">
-          <Balances adminUser={userData} />
+          <Balances adminUser={userData} userData={userData} />
         </Route>
         <Route path="/spendings">
-          <Spending />
+          <Spending userData={userData} />
         </Route>
         <Route path="/digital-channels">
-          <DigitalChannels />
+          <DigitalChannels userData={userData}/>
         </Route>
         <Route exact path="/">
           <Home />
