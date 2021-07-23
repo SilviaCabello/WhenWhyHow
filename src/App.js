@@ -22,18 +22,8 @@ function App() {
 
   const history = useHistory();
 
-  // const adminUser = {
-  //   username: req.body.username,
-  //   password: req.body.password,
-  // };
-
-  // const adminUser = {
-  //   user: "",
-  //   password: "12345",
-  // };
-
   const fetchData = () => {
-    if (user.username !== "" && user.password!=="") {
+    if (user.username !== "" && user.password !== "") {
       fetch("/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -49,6 +39,7 @@ function App() {
         .catch((err) => console.log("from catch", err));
     }
   };
+
   return (
     <div className="App">
       <Switch>
@@ -61,13 +52,13 @@ function App() {
           />
         </Route>
         <Route path="/balances">
-          <Balances adminUser={userData} userData={userData} />
+          <Balances adminUser={userData} />
         </Route>
         <Route path="/spendings">
-          <Spending userData={userData} />
+          <Spending />
         </Route>
         <Route path="/digital-channels">
-          <DigitalChannels userData={userData}/>
+          <DigitalChannels />
         </Route>
         <Route exact path="/">
           <Home />
