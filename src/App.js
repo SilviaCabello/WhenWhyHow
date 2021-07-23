@@ -33,7 +33,7 @@ function App() {
   // };
 
   const fetchData = () => {
-    if (user.username !== "") {
+    if (user.username !== "" && user.password!=="") {
       fetch("/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -49,42 +49,6 @@ function App() {
         .catch((err) => console.log("from catch", err));
     }
   };
-
-  // const login = () => {
-  //   if (res.json) {
-  //     setUserData(response.data.message);
-  //   } else {
-  //     setUserData(response.data[0].username);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   if (response.data.login == "true") {
-  //     setLoginStatus(response.data.user[0].username);
-  //   }
-  // });
-
-  // const login = (details) => {
-  //   console.log(details);
-  //   if (
-  //     //     details.user === adminUser.user &&
-  //     details.password === adminUser.password
-  //   ) {
-  //     console.log("logged in");
-  //     setUser({
-  //       user: details.user,
-  //       password: details.password,
-  //     });
-  //     setError("");
-  //   } else {
-  //     setUser({ user: "", password: "" });
-  //     setError("details do not match");
-  //   }
-  // };
-
-  // const Logout = () => {
-  //   setUser({});
-  // };
   return (
     <div className="App">
       <Switch>
