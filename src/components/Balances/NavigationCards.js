@@ -16,15 +16,17 @@ function NavigationCards() {
           </div>
         </Link>
        
-
-      <div className="banking-card">
-        <img
-          className="card-icon-balances-habits"
-          src="https://i.imgur.com/9wJBl72.png"
-          alt="spendings-icon"
-        />
-        <p className="card-title-habits">Banking habits</p>
-      </div>
+        <Link to="/balances">
+          <div className="banking-card">
+            <img
+              className="card-icon-balances-img"
+              src="https://i.imgur.com/HYWFfWq.png"
+              alt="spendings-icon"
+            />
+            <p className="card-title-habits">Balances</p>
+          </div>
+        </Link>
+      
 
       <Link to="/digital-channels">
         <div className="digital-card">
