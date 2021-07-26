@@ -22,18 +22,8 @@ function App() {
 
   const history = useHistory();
 
-  // const adminUser = {
-  //   username: req.body.username,
-  //   password: req.body.password,
-  // };
-
-  // const adminUser = {
-  //   user: "",
-  //   password: "12345",
-  // };
-
   const fetchData = () => {
-    if (user.username !== "") {
+    if (user.username !== "" && user.password !== "") {
       fetch("/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -50,41 +40,6 @@ function App() {
     }
   };
 
-  // const login = () => {
-  //   if (res.json) {
-  //     setUserData(response.data.message);
-  //   } else {
-  //     setUserData(response.data[0].username);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   if (response.data.login == "true") {
-  //     setLoginStatus(response.data.user[0].username);
-  //   }
-  // });
-
-  // const login = (details) => {
-  //   console.log(details);
-  //   if (
-  //     //     details.user === adminUser.user &&
-  //     details.password === adminUser.password
-  //   ) {
-  //     console.log("logged in");
-  //     setUser({
-  //       user: details.user,
-  //       password: details.password,
-  //     });
-  //     setError("");
-  //   } else {
-  //     setUser({ user: "", password: "" });
-  //     setError("details do not match");
-  //   }
-  // };
-
-  // const Logout = () => {
-  //   setUser({});
-  // };
   return (
     <div className="App">
       <Switch>
@@ -97,13 +52,13 @@ function App() {
           />
         </Route>
         <Route path="/balances">
-          <Balances adminUser={userData} userData={userData} />
+          <Balances userData={userData} />
         </Route>
         <Route path="/spendings">
           <Spending userData={userData} />
         </Route>
         <Route path="/digital-channels">
-          <DigitalChannels userData={userData}/>
+          <DigitalChannels userData={userData} />
         </Route>
         <Route exact path="/">
           <Home />
