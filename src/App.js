@@ -52,13 +52,13 @@ function App() {
           />
         </Route>
         <Route path="/balances">
-          <Balances adminUser={userData} />
+          <Balances userData={userData} />
         </Route>
         <Route path="/spendings">
-          <Spending />
+          <Spending userData={userData} />
         </Route>
         <Route path="/digital-channels">
-          <DigitalChannels />
+          <DigitalChannels userData={userData} />
         </Route>
         <Route exact path="/">
           <Home />
