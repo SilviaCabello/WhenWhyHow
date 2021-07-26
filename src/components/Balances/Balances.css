@@ -77,7 +77,8 @@ div.card-balances.card {
 .banking-card {
   height: 100px;
   width: 100px;
-  background-color: #e6eaef;
+  background-color: var(--cards-second);
+  box-shadow: 1px 1px 7px 1px #898989;
   border-radius: 5px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -100,6 +101,10 @@ div.card-balances.card {
   box-shadow: 4px 4px 15px 2px #898989;
   background-color: var(--cards-second-hover);
 }
+.banking-card:hover {
+  box-shadow: 4px 4px 15px 2px #898989;
+  background-color: var(--cards-second-hover);
+}
 
 .card-title {
   color: rgb(255, 255, 255);
@@ -108,7 +113,7 @@ div.card-balances.card {
   margin-top: 7px;
 }
 .card-title-habits {
-  color: rgb(108, 108, 108);
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 12px;
   margin-top: 7px;

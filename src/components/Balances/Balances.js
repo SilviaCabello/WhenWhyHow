@@ -3,13 +3,13 @@ import MainBank from "./MainBank";
 import NavigationCards from "./NavigationCards.js";
 import NavBarOverview from "../NavBar/NavBarOverview";
 
-function Balances({ adminUser, userData }) {
+function Balances({ userData }) {
   console.log(userData)
   return (
     <div className="Welcome">
       <NavBarOverview />
       <h3 className="welcome-balances">
-        Welcome, <span>{adminUser.user}!</span>
+        Welcome, <span>{userData.username}!</span>
       </h3>
       <img
         className="balances-illustration"
