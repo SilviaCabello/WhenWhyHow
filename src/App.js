@@ -20,9 +20,12 @@ function App() {
   const [error] = useState("");
   const history = useHistory();
 
+  //https://lit-escarpment-01617.herokuapp.com/
+
   const fetchData = () => {
     if (user.username !== "" && user.password !== "") {
-      fetch("https://lit-escarpment-01617.herokuapp.com/https://whenwhyhow.herokuapp.com/auth/login", {
+      fetch("https://whenwhyhow.herokuapp.com/auth/login", {
+        mode: 'no-cors',
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
