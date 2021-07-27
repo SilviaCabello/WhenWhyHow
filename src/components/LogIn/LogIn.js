@@ -8,17 +8,13 @@ function LogIn({ login, error, fetchData, userData }) {
   const [count, setCount] = useState(0);
 
   const handleClick = (e) => {
-    // e.preventDefault();
+  
     login(details);
     setCount(count + 1);
-    // fetchData();
+    
   };
   // eslint-disable-next-line
   useEffect(fetchData, [count]);
-  /*const submitHandler = (e) => {
-    e.preventDefault();
-    login(details);
-  };*/
 
   return (
     <div className="wrapper">

@@ -16,15 +16,13 @@ function App() {
   const [userData, setUserData] = useState({});
   const [user, setUser] = useState({ username: "", password: "" });
   //eslint-disable-next-line
-  const [error, setError] = useState("");
-
-  // const [loginStatus, setLoginStatus] = useState("");
-
+  
+  const [error] = useState("");
   const history = useHistory();
 
   const fetchData = () => {
     if (user.username !== "" && user.password !== "") {
-      fetch("/auth/login", {
+      fetch("https://lit-escarpment-01617.herokuapp.com/https://whenwhyhow.herokuapp.com/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
