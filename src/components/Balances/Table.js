@@ -4,25 +4,19 @@ import records from "./records.json";
 import { COLUMNS } from "./columns";
 import "./Table.css";
 
-const Table = ({userData}) => {
+const Table = ({ userData }) => {
   const columns = useMemo(() => COLUMNS, []);
   const data = useMemo(() => records, []);
-  console.log(records);
+
   const tableInstance = useTable({
     columns,
     data,
   });
 
-  const {
-    getTableProps,
-    getTableBodyProps,
-    rows,
-    prepareRow,
-  } = tableInstance;
+  const { getTableProps, getTableBodyProps, rows, prepareRow } = tableInstance;
 
   return (
     <table {...getTableProps()}>
-
       <tbody {...getTableBodyProps()}>
         {rows.map((row) => {
           prepareRow(row);

@@ -4,7 +4,6 @@ import { Accordion, Card, Button } from "react-bootstrap";
 import Table from "./Table";
 
 export default function MainBank({ userData }) {
-  console.log(userData);
   return (
     <div className="accordionContainer">
       <Accordion className="Acordion-Balances">

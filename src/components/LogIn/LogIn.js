@@ -3,17 +3,15 @@ import { useState, useEffect } from "react";
 
 import NavBarLogin from "../NavBar/NavBarLogin";
 
-function LogIn({ login, error, fetchData, userData }) {
+function LogIn({ login, error, fetchData }) {
   const [details, setDetails] = useState({ username: "", password: "" });
   const [count, setCount] = useState(0);
 
   const handleClick = (e) => {
-  
     login(details);
     setCount(count + 1);
-    
   };
-  // eslint-disable-next-line
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(fetchData, [count]);
 
   return (
