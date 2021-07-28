@@ -19,7 +19,7 @@ function Home() {
           <div className="intro-text">
             <br></br>
             <h1 className="intro-title">
-              Welcome to <mark className="highlight">Smart</mark> Account!{" "}
+              Welcome to <span className="decor">Smart</span> Account!
             </h1>
             <h4 className="second-intro-title">
               Our banking app just got even better!
@@ -29,11 +29,9 @@ function Home() {
             <p className="text-intropage">
               Do you want to be better at saving? If you’re trying to be better
               with your money, our Smart Account is the perfect app for you.
-              Smart account lets you get tailored ‘insights’ into how you spend
-              with its newest feature – My Digital Channels. Smart Account looks
-              at what you do in your main bank accounts and sends you the
-              information to help you be smarter about your spendings. Just
-              click on the login button to sign into your profile and you’re
+              Smart account lets you get tailored ‘insights’ into your spendings
+              with its newest feature – <span className="decor-text">My Digital Channels</span>. 
+              Just click on the login button to sign into your profile and you’re
               good to go.
             </p>
           </div>
