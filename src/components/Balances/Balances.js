@@ -4,7 +4,6 @@ import NavigationCards from "./NavigationCards.js";
 import NavBarOverview from "../NavBar/NavBarOverview";
 
 function Balances({ userData }) {
-  console.log(userData)
   return (
     <div className="Welcome">
       <NavBarOverview />
