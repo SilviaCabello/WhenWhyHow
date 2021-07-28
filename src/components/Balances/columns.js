@@ -4,6 +4,10 @@ export const COLUMNS = [
         accessor:"record"
     },
     {
+        Header: "Provisional Balance",
+        accessor: "Provisional Balance"
+    },
+    {
         Header: "import",
         accessor:"import"
     },

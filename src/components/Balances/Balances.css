@@ -1,7 +1,7 @@
 .welcome-balances {
   text-align: center;
   font-weight: 800;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 div.card-balances.card {
@@ -14,6 +14,7 @@ div.card-balances.card {
   width: 90%;
   display: block;
   margin: 20px auto 20px auto;
+  display: none;
 }
 
 .balances-totalcash {
@@ -21,7 +22,7 @@ div.card-balances.card {
   background-color: var(--second);
   height: 50px;
   padding-top: 13px;
-  margin: auto;
+  margin: 30px auto;
 }
 
 .balances-categories-balances {
@@ -29,6 +30,7 @@ div.card-balances.card {
   grid-template-columns: repeat(3, auto);
   grid-gap: 10px;
   justify-content: center;
+  margin: 20px auto 20px auto;
 }
 
 .toggle-MainBank-balances {
@@ -137,14 +139,16 @@ div.card-balances.card {
 @media (min-width: 1024px) {
   .balances-illustration {
     width: 35%;
+    display: none;
   }
 
   .balances-totalcash {
-    width: 50%;
+    width: 70%;
+    margin-top: 30px;
   }
 
   .card-balances {
-    width: 50%;
+    width: 70%;
     margin: auto;
   }
 
