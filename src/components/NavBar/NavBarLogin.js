@@ -14,6 +14,7 @@ const NavBarLogin = () => {
     },
   ];
 
+
   const [menuList, setMenuList] = useState(false);
   const showHide = () => setMenuList(!menuList);
   return (
@@ -48,6 +49,7 @@ const NavBarLogin = () => {
               );
             })}
           </ul>
+
         </div>
       </nav>
     </div>

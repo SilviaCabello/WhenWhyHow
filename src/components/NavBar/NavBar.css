@@ -37,7 +37,7 @@
     align-items: center;
   }
 
-  a {
+  .a-navbar {
     text-decoration: none;
     background: none;
   }
@@ -103,7 +103,7 @@
     width: 100%;
     height: 80px;
   }
-  a {
+  .a-navbar {
     text-decoration: none;
     background: var(--main);
     padding: 0px;
