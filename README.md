@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+<!--Goal and purpose of this project -->
+## About this project  
+This project is part of the Wild Codes Schools curriculum of becoming a junior full-stack developer. The purpose of this project is to train coding skills in the front- and backend. Whereas the frontend is build with REACT using many different libraries, the backend is linked to an online mysql database which has been deployed on heroku. 
 
+The app itself has been built for banking customers, who want to safely log into their **Smart Account** and view their banking data such as transactions, spending patterns,  digital channel use, etc. 
+
+
+<!-- Screen shots of the app -->
+## Mockups 
+![Product Name Screen Shot]()
+
+
+
+
+<!-- Build with --> 
+# Getting Started with Create React App 💥
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `yarn start`
+<!--How you can contribute -->
+## How to test and run this project 🧐
+If you want to see how this app looks on your machine or just want to try some new code, follow the instructions: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Fork this Project for the frontend fork and fork [Github](https://github.com/francescoluciani/wwhbackend) for the backend!
+2. Clone the frontend and backend on your local machine (`make sure you have front and back in one folder`)
+3. Open the project in your favorite sourcde editor 
+4. Create your own Branch to work on (`git checkout -b myBranchName`)
+5. Run npm install to make sure that you have alle dependencies 
+6. Try new code and commit your Changes (`git commit -m 'tryingSomeStuff'`)
+7. Push to your own Branch (`git push origin myBranchName`)
+8. Open a Pull Request on Github 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- Contact -->
+## Contributors & Contact  😄 
 
-### `yarn build`
+If you want to see who contributed to this project or if you have some questions, feel free to contact us: 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Helen Trishia - [Github](https://github.com/HELENTRISHA) / [LinkedIn](https://www.linkedin.com/in/helen-trisha-laurencine-ndiaye/) 
+Silvia Cabello  Martinez- [Github](https://github.com/SilviaCabello)/ [LinkedIn](https://www.linkedin.com/in/silviacabellom/) 
+Francesco Luciani - [Github](https://github.com/francescoluciani)/ [LinkedIn](https://www.linkedin.com/in/lucianifrancesco/) 
+Isabel Mehlmann - [Github](https://github.com/Pits111)/ [LinkedIn](https://www.linkedin.com/in/isabelmehlmann/) 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
