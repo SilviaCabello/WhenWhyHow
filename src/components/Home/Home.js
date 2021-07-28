@@ -18,9 +18,8 @@ function Home() {
 
       <div className="intro-text">
         <br></br>
-        <h1>Welcome To Smart Account </h1>
-        <br></br>
-        <h4>Our banking app just got even better!</h4>
+        <h1 className="intro-title">Welcome to <mark className="highlight">Smart</mark> Account! </h1>
+        <h4 className="second-intro-title">Our banking app just got even better!</h4>
         <br></br>
         <p>
         Do you want to be better at saving? Or get to more about your spending patterns? <br></br>
