@@ -26,7 +26,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## How to test and run this project 🧐
 If you want to see how this app looks on your machine or just want to try some new code, follow the instructions: 
 
-1. Fork this Project for the frontend fork and fork [Github](https://github.com/francescoluciani/wwhbackend) for the backend!
+1. Fork this Project for the frontend fork and fork [this repo](https://github.com/francescoluciani/wwhbackend) for the backend!
 2. Clone the frontend and backend on your local machine (`make sure you have front and back in one folder`)
 3. Open the project in your favorite sourcde editor 
 4. Create your own Branch to work on (`git checkout -b myBranchName`)
