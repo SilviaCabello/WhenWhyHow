@@ -27,7 +27,7 @@ const NavBarOverview = () => {
         <div>
             <nav className="navbar-items">
 				<div className="logo-container">
-				<a href="/">
+				<a className="a-navbar" href="/">
 					<img src="https://i.postimg.cc/ZRWV5ftX/LOGO.png" alt="" className="logo" />
 				</a>
 				</div>

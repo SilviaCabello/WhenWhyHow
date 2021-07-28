@@ -1,7 +1,6 @@
 /* Desktop Version */
 
 @media (min-width: 481px) {
-
   .navbar-items {
     background: var(--main);
     width: 100%;
@@ -13,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-width: 10%;
+    width: 10%;
   }
 
   .logo {
@@ -23,11 +22,10 @@ width: 10%;
     float: left;
   }
 
-
   .nav-menu {
     background: transparent;
     display: flex;
-    align-items: center ;
+    align-items: center;
     justify-content: center;
     list-style: none;
     margin: 0;
@@ -39,7 +37,7 @@ width: 10%;
     align-items: center;
   }
 
-  a {
+  .a-navbar {
     text-decoration: none;
     background: none;
   }
@@ -84,7 +82,6 @@ width: 10%;
     display: none;
   }
 
-
   .logo:hover {
     transform: translateY(-7px);
     font-size: 5rem;
@@ -92,12 +89,9 @@ width: 10%;
   }
 }
 
-
 /* Mobile Version */
 
 @media screen and (max-width: 480px) {
- 
-
   .logo {
     width: 2rem;
   }
@@ -109,7 +103,7 @@ width: 10%;
     width: 100%;
     height: 80px;
   }
-  a {
+  .a-navbar {
     text-decoration: none;
     background: var(--main);
     padding: 0px;
@@ -169,7 +163,6 @@ width: 10%;
     transform: translate(-50%, 60%);
     font-size: 2rem;
   }
-
 
   .logo-container {
     display: flex;
