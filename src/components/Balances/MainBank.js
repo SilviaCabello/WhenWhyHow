@@ -15,7 +15,7 @@ export default function MainBank({ userData }) {
               variant="link"
               eventKey="0"
             >
-              Main Bank ▼
+              Main Bank ▼ 
             </Accordion.Toggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">

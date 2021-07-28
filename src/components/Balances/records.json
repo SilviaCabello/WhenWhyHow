@@ -1,44 +1,44 @@
 [
     {
         "id":1,
-        "record":" Rewe Supermarket Auerstrasse",
+        "record":" Morrisons",
         "Provisional Balance": "4578€" ,
-        "import":"19,98€",
+        "import":"-19,98€",
         "date":"24.06.2021"
     },
     {
         "id":2,
-        "record":"Greenfinch Restaurant",
+        "record":"Sainsbury's",
         "Provisional Balance": "4578€" ,
-        "import":"53,85€",
+        "import":"+53,85€",
         "date":"24.06.2021"
     },
     {
         "id":3,
-        "record":"Filmtheater am Friedrichshain",
+        "record":"Fresh Star",
         "Provisional Balance": "4578€" ,
-        "import":"30,90€",
+        "import":"+30,90€",
         "date":"26.06.2021"
     },
     {
         "id":4,
-        "record":"Rewe Supermarket Auerstrasse",
+        "record":"Gas-Station",
         "Provisional Balance": "4578€" ,
-        "import":"45,99€",
+        "import":"-45,99€",
         "date":"28.06.2021"
     },
     {
         "id":5,
-        "record":"Kleiner Schritte Schue",
+        "record":"Four Seasons",
         "Provisional Balance": "4578€" ,
-        "import":"59,00€",
+        "import":"-59,00€",
         "date":"28.06.2021"
     },
     {
         "id":6,
-        "record":"Denns BioMarkt Greifswalder Str.",
+        "record":"Target",
         "Provisional Balance": "4578€" ,
-        "import":"27,99€",
+        "import":"-27,99€",
         "date":"29.06.2021"
     }
 ]
