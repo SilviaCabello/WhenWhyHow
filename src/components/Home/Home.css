@@ -2,16 +2,16 @@
   background-image: url("https://res.cloudinary.com/dnefeccae/image/upload/v1623946169/whenwhyHow/pexels-henry--co-2628393_2_exs5ii.jpg");
 }
 .container-background {
-  background-image: url("https://res.cloudinary.com/dnefeccae/image/upload/v1624546542/whenwhyHow/A5fcFPq_cghyfg.jpg"),
-    url("https://res.cloudinary.com/dnefeccae/image/upload/v1624546550/whenwhyHow/BJ22PP1_ioyebj.jpg");
+  background-image: url("https://i.imgur.com/sfQOSk8.jpg"),
+    url("https://i.imgur.com/A947en7.jpg");
   background-repeat: no-repeat;
   background-position: left, right;
   background-size: contain;
-  /* height: 120vh; */
+
 }
 
 .picture {
-  width: 90%;
+  width: 60%;
   display: block;
   margin: auto;
 }
@@ -21,6 +21,19 @@
   margin: 30px auto;
   text-align: center;
 }
+
+.intro-title {
+  font-weight: 900;
+}
+
+.highlight {
+ background-color: #f0de70;
+}
+
+.second-intro-title {
+  margin-top: 20px;
+}
+
 .explore-profile {
   display: flex;
   justify-content: center;
@@ -37,7 +50,7 @@
   border-radius: 30px;
   border: none;
   padding: 10px;
-  margin: 3rem;
+  margin: 10px auto;
   font-weight: bold;
 }
 .intro-box {
@@ -61,7 +74,7 @@
   grid-template-columns: repeat(2, auto);
   grid-gap: 35px;
   align-items: center;
-  margin: 0 10px 0 10px;
+  margin: 45px 10px 0 10px;
   padding-bottom: 50px;
 }
 

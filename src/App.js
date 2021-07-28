@@ -18,13 +18,13 @@ library.add(fab, faCheckSquare);
 function App() {
   const [userData, setUserData] = useState({});
   const [user, setUser] = useState({ username: "", password: "" });
+
   const [error] = useState("");
   const history = useHistory();
 
   const fetchData = () => {
     if (user.username !== "" && user.password !== "") {
       fetch("https://whenwhyhow.herokuapp.com/auth/login", {
-        mode: "no-cors",
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
