@@ -6,8 +6,12 @@ The app itself has been built for banking customers, who want to safely log into
 
 
 <!-- Screen shots of the app -->
-## Mockups 
-![Product Name Screen Shot]()
+## Mockups and Visual Identity
+
+![screenshot](https://user-images.githubusercontent.com/78726341/127326292-af674648-9229-478f-9ef0-1c95f1038795.jpg)
+
+
+![visualidentity](https://user-images.githubusercontent.com/78726341/127325897-f9927dfe-4195-4087-abf0-8ae61bfb2424.jpg)
 
 
 
