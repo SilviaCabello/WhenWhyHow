@@ -11,7 +11,7 @@ function LogIn({ login, error, fetchData }) {
     login(details);
     setCount(count + 1);
   };
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(fetchData, [count]);
 
   return (
