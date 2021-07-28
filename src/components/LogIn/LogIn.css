@@ -129,10 +129,12 @@
     height: 150px;
     top: 65px;
     background: #f4f5f5;
+    margin-bottom: 0;
   }
   .title-signin {
     width: 400px;
     height: 55px;
+    margin-bottom: 0; 
   }
 
   .label-user,
