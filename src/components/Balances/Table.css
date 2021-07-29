@@ -10,7 +10,13 @@ table {
 
 table td,
 table th {
-  padding: 8px;
+  display: inline-row;
+  justify-content: space-between;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 0; 
+  padding-left: 0; 
+  font-size: 15px;
 }
 
 table tr:nth-child(even) {

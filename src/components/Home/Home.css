@@ -27,7 +27,7 @@
   margin-top: 50px;
 }
 
-.highlight {
+.decor {
   background-color: #f0de70;
 }
 
@@ -100,6 +100,11 @@
     background-position: none;
     background-size: none;
   }
+
+  .container{
+    padding: 0;
+    margin: 0;
+  }
   .picture {
     width: 100%;
     display: none;
@@ -107,17 +112,30 @@
   .intro-title {
     font-size: 35px;
     margin-top: 0;
-    line-height: 1.5;
+    margin-bottom: 0;
+    line-height: 1.3;
   }
+
+
+  .second-intro-title{
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+
   .intro-text {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-align: center;
     width: 300px;
   }
   .text-intropage {
     margin: 0;
   }
+
+  .decor-text {
+    font-weight: none;
+  }
+
   .explore-profile {
     display: flex;
     justify-content: center;

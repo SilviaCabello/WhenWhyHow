@@ -16,7 +16,7 @@ function Balances({ userData }) {
         alt=""
       />
       <p className="balances-totalcash">
-        Available Cash <b>{userData.balance}</b>
+        Total Available Cash <b>{userData.balance} €</b>
       </p>
       <MainBank userData={userData} />
       <NavigationCards />
