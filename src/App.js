@@ -24,7 +24,7 @@ function App() {
 
   const fetchData = () => {
     if (user.username !== "" && user.password !== "") {
-      fetch("https://whenwhyhow.herokuapp.com/auth/login", {
+      fetch("https://lit-escarpment-01617.herokuapp.com/https://whenwhyhow.herokuapp.com/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
